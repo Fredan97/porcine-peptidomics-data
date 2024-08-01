@@ -11,7 +11,7 @@ import math
 #%%
 reducer = umap.UMAP(random_state=7)
 #%%
-df = pd.read_excel(r"C:\Users\fr1682fo\Work Folders\Desktop\Dermatology\Peptidome\Programming\Pig WF\Full data day 1 & 2 & 3\data\Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
+df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
 data = df.iloc[3:,1:]
 group = df.iloc[1,1:]
 day = df.iloc[0,1:]
@@ -23,15 +23,6 @@ for x in range(data.shape[0]):
     for y in range(data.shape[1]):
         if data.iloc[x][y] != 0:
             data.iloc[[x],[y]] = math.log(data.iloc[x][y],2)
-
-#%% Change data into binary
-
-for x in range(data.shape[0]):
-    for y in range(data.shape[1]):
-        if data.iloc[x][y] != 0:
-            data.iloc[[x],[y]] = 1
-
-
 
 #%% Transpose data
 transpdata=data.transpose()

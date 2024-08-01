@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #Check peptide length scree plot
 
 #%%
-df = pd.read_excel("Data Day 1 and 2 and 3 OnlyPep NoDups.xlsx")
+df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups.xlsx")
 data = df.iloc[2:,:]
 days = df.iloc[0:1,:]
 groups = df.iloc[1:2,:]

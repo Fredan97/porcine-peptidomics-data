@@ -4,8 +4,8 @@ from matplotlib import pyplot as plt
 import matplotlib_venn
 
 #%% Import data
-df = pd.read_excel(r"C:\Users\fr1682fo\Work Folders\Desktop\Dermatology\Peptidome\Programming\Pig WF\Full data day 1 & 2 & 3\data\Data Day 1.xlsx")
-dfblind = pd.read_excel(r"C:\Users\fr1682fo\Work Folders\Desktop\Dermatology\Peptidome\Programming\Pig WF\Full data day 1 & 2 & 3\data\Data_rerun_day1_OnlyPep_Nodups.xlsx")
+df = pd.read_excel("../data/Data Day 1.xlsx")
+dfblind = pd.read_excel("../data/Data_rerun_day1_OnlyPep_Nodups.xlsx")
 #%% Trim excess data
 data = df.iloc[:,1:51]
 data = data.drop(columns = ["Start", "End"])

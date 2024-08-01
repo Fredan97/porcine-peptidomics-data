@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #Check peptide length scree plot
 
 #%%
-df = pd.read_excel("Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
+df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
 data = df.iloc[3:,:]
 days = df.iloc[0:1,:]
 groups = df.iloc[1:2,:]
@@ -82,7 +82,7 @@ for group in ["S.a","P.a","Ctrl"]:
             col = "red"
         else:
             col = colorDict[group]
-        ax.bar([x_pos+width*groupPosDict[blind] for x_pos in x],maxstand_y,width,color = col)
+        ax.bar([x_pos+width*groupPosDict[blind] for x_pos in x],sumstand_y,width,color = col)
         plt.title(label = group)
         plt.xlabel('Peptide length (AA)')
         plt.ylabel('Relative abundance')
@@ -94,14 +94,15 @@ for group in ["S.a","P.a","Ctrl"]:
              
 #%% Count # of occurances
 x = list(range(1,longest+1))
-for day in ["1","2","3"]:
+for group in ["S.a","P.a","Ctrl"]:
     fig, ax = plt.subplots()
-    for group in ["S.a","P.a","Ctrl","Double","Acc Double"]:
+    for blind in ["No","Yes"]:
         y = [0]*len(x)
         for i in range(data.shape[0]):
             length = findLength(data.iloc[i,0])
+            n = 0
             for j in range(1,data.shape[1]):
-                if (group == groups.iloc[0,j]) and (str(days.iloc[0,j]) == day):
+                if (group == groups.iloc[0,j]) and (blinds.iloc[0,j] == blind) and 1 == days.iloc[0,j]:
                     y[length-1] += data.iloc[i,j]
         sum_y = sum(y)
         max_y = max(y)
@@ -113,11 +114,16 @@ for day in ["1","2","3"]:
             sumstand_y = [float(k)/sum_y for k in y]
         else:
             sumstand_y = y
-        ax.bar([x_pos+width*groupPosDict[group] for x_pos in x],sumstand_y,width,color = colorDict[group])
-        plt.title(label = "Day "+day)
+        
+        if blind == "Yes":
+            col = "red"
+        else:
+            col = colorDict[group]
+        ax.bar([x_pos+width*groupPosDict[blind] for x_pos in x],sumstand_y,width,color = col)
+        plt.title(label = group)
         plt.xlabel('Peptide length (AA)')
         plt.ylabel('Relative abundance')
         plt.show()
 
 
-
+y[length-1] += data.iloc[i,j]

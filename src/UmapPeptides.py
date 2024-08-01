@@ -6,23 +6,28 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import umap
+import math
 
 #%%
-reducer = umap.UMAP()
+reducer = umap.UMAP(random_state=7)
 #%%
-df = pd.read_excel("Data Day 1 and 2 and 3 OnlyPep NoDups.xlsx")
+df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups.xlsx")
 data = df.iloc[2:,1:]
 group = df.iloc[1,1:]
 day = df.iloc[0,1:]
 
-#%%
+
+
+#%% Change data into log
 
 for x in range(data.shape[0]):
     for y in range(data.shape[1]):
         if data.iloc[x][y] != 0:
-            data.iloc[[x],[y]] = 1
-
+            data.iloc[[x],[y]] = math.log(data.iloc[x][y],2)
+            
+#%% Transpose data
 transpdata=data.transpose()            
+
 
 
 #%%
@@ -65,5 +70,3 @@ plt.xlabel('UMAP 1')
 plt.ylabel('UMAP 2')
 
 plt.show()
-
-#%% Make UMAP and include the new samples
