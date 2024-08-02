@@ -10,18 +10,18 @@ import matplotlib.pyplot as plt
 
 #Check peptide length scree plot
 
-#%%
+#%% Read data
 df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups.xlsx")
 data = df.iloc[2:,:]
 days = df.iloc[0:1,:]
 groups = df.iloc[1:2,:]
-#%%
+#%% Convert to binary
 for x in range(data.shape[0]):
     for y in range(data.shape[1]-1):
         if data.iloc[x][y+1] != 0:
             data.iloc[[x],[y+1]] = 1
 
-#%%
+#%% Define needed functions
 def findLength(seq):
     length = 0
     for char in seq:
@@ -29,7 +29,7 @@ def findLength(seq):
             length += 1
     return length
 
-#%%
+#%% Find longest peptide in all samples
 longest = 0
 for sequence in df.iloc[2:,0]:
     if findLength(sequence) > longest:
