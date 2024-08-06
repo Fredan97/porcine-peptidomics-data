@@ -81,7 +81,7 @@ for day in ["1","2","3"]:
             sumstand_y = [float(k)/sum_y for k in y]
         else:
             sumstand_y = y
-        ax.bar([x_pos+width*groupPosDict[group] for x_pos in x],sumstand_y,width,color = colorDict[group])
+        ax.plot(x,sumstand_y,width,color = colorDict[group])
         plt.title(label = "Day "+day)
         plt.xlabel('Peptide length (AA)')
         plt.ylabel('Relative abundance')
