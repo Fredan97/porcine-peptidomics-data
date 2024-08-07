@@ -7,20 +7,21 @@ Created on Wed Jul 10 15:19:29 2024
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
+import math
 
 #Check peptide length scree plot
 
-#%%
+#%% Import and trim data
 df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
 data = df.iloc[3:,:]
 days = df.iloc[0:1,:]
 groups = df.iloc[1:2,:]
 blinds = df.iloc[2:3,:]
-#%%
+#%% Convert to log
 for x in range(data.shape[0]):
     for y in range(data.shape[1]-1):
         if data.iloc[x][y+1] != 0:
-            data.iloc[[x],[y+1]] = 1
+            data.iloc[[x],[y+1]] =  math.log(data.iloc[x][y+1],2)
 
 #%%
 def findLength(seq):
@@ -51,7 +52,6 @@ groupPosDict["Yes"] = 1/2
 #Count if present in any sample
 
 
-width = 0.4
 
 x = list(range(1,longest+1))
 for group in ["S.a","P.a","Ctrl"]:
@@ -82,8 +82,8 @@ for group in ["S.a","P.a","Ctrl"]:
             col = "red"
         else:
             col = colorDict[group]
-        ax.bar([x_pos+width*groupPosDict[blind] for x_pos in x],sumstand_y,width,color = col)
-        plt.title(label = group)
+        ax.plot(x,sumstand_y,color = col)
+        plt.plot(label = group)
         plt.xlabel('Peptide length (AA)')
         plt.ylabel('Relative abundance')
         plt.show()
@@ -92,7 +92,7 @@ for group in ["S.a","P.a","Ctrl"]:
         
     
              
-#%% Count # of occurances
+#%% Sum up all occurances
 x = list(range(1,longest+1))
 for group in ["S.a","P.a","Ctrl"]:
     fig, ax = plt.subplots()
@@ -119,11 +119,10 @@ for group in ["S.a","P.a","Ctrl"]:
             col = "red"
         else:
             col = colorDict[group]
-        ax.bar([x_pos+width*groupPosDict[blind] for x_pos in x],sumstand_y,width,color = col)
+        ax.plot(x,sumstand_y,color = col)
         plt.title(label = group)
         plt.xlabel('Peptide length (AA)')
-        plt.ylabel('Relative abundance')
+        plt.ylabel('Relative intensity')
         plt.show()
 
 
-y[length-1] += data.iloc[i,j]
