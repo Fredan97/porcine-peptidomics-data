@@ -32,6 +32,10 @@ transpdata=data.transpose()
 scaled_data = StandardScaler().fit_transform(transpdata)
 embedding = reducer.fit_transform(scaled_data)
 
+#%% Fix font sizes and styles
+plt.rcParams['pdf.fonttype']=42
+plt.rcParams["font.family"] = "Arial"
+
 #%%
 # Prepare colors and markers
 colors = group.map({"S.a": 0, "P.a": 1, "Ctrl": 2, "Double": 3, "Acc Double": 5}).tolist()

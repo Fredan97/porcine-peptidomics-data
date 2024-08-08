@@ -47,6 +47,13 @@ colorDict["Ctrl"] = "black"
 groupPosDict = {}
 groupPosDict["No"] = -1/2
 groupPosDict["Yes"] = 1/2
+
+
+#%% Fix font sizes and styles
+plt.rcParams['pdf.fonttype']=42
+plt.rcParams["font.family"] = "Arial"
+
+
 #%% Plot day by day
 
 #Count if present in any sample

@@ -62,13 +62,21 @@ makeBooleanDataframe(booleanDfBlind,datablind,saBlindRange,paBlindRange,ctrlBlin
 [setSa, setPa, setCtrl] = makeSets(booleanDf)
 [setSaBlind, setPaBlind, setCtrlBlind] = makeSets(booleanDfBlind)
 
+
+#%% Fix font sizes and styles
+plt.rcParams['pdf.fonttype']=42
+plt.rcParams["font.family"] = "Arial"
+
+
+
 #%% Make venn diagrams
-matplotlib_venn.venn3((setSa, setPa, setCtrl))
 plt.figure()
-matplotlib_venn.venn3((setSaBlind,setPaBlind,setCtrlBlind))
+matplotlib_venn.venn3(subsets = (setSa, setPa, setCtrl),set_labels = ("S.a","P.a","Ctrl"))
 plt.figure()
-matplotlib_venn.venn2((setSa,setSaBlind))
+matplotlib_venn.venn3((setSaBlind,setPaBlind,setCtrlBlind),set_labels = ("S.a-blind","P.a-blind","Ctrl-blind"))
 plt.figure()
-matplotlib_venn.venn2((setPa,setPaBlind))
+matplotlib_venn.venn2((setSa,setSaBlind),set_labels = ("S.a","S.a-blind"))
 plt.figure()
-matplotlib_venn.venn2((setCtrl,setCtrlBlind))
+matplotlib_venn.venn2((setPa,setPaBlind),set_labels = ("P.a","P.a-blind"))
+plt.figure()
+matplotlib_venn.venn2((setCtrl,setCtrlBlind),set_labels = ("Ctrl","Ctrl-blind"))
