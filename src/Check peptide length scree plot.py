@@ -47,52 +47,16 @@ colorDict["Acc Double"] = "red"
 
 
 #%% Fix font sizes and styles
-plt.rcParams['pdf.fonttype']=42
+plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
+#%% Create labels and handles for legend
+linehandles = [plt.Line2D([0,0],[0,0],color=colorDict[i], linestyle='-') for i in ["S.a","P.a","Ctrl","Double","Acc Double"]]
+linelabels = ["S.a","P.a","Ctrl","Double infection","Accidental double infection"]
 
-#%% Plot day by day
-
-#Count if present in any sample
-
-
-
-x = list(range(1,longest+1))
-for day in ["1","2","3"]:
-    fig, ax = plt.subplots()
-    for group in ["S.a","P.a","Ctrl","Double","Acc Double"]:
-        if not(day == "3" and group != "Double"):
-            y = [0]*len(x)
-            for i in range(data.shape[0]):
-                length = findLength(data.iloc[i,0])
-                n = 0
-                for j in range(1,data.shape[1]):
-                    if (group == groups.iloc[0,j]) and (str(days.iloc[0,j]) == day):
-                        n += data.iloc[i,j]
-                        if n != 0:
-                            y[length-1] += 1
-                            break
-            sum_y = sum(y)
-            max_y = max(y)
-            if (max_y != 0):
-                maxstand_y = [float(k)/max_y for k in y]
-            else:
-                maxstand_y = y
-            if (sum_y != 0):
-                sumstand_y = [float(k)/sum_y for k in y]
-            else:
-                sumstand_y = y
-            ax.plot(x,sumstand_y,0.1,color = colorDict[group])
-            plt.title(label = "Day "+day)
-            plt.xlabel('Peptide length (AA)')
-            plt.ylabel('Relative abundance')
-            plt.show()
-            
-            
-        
     
              
-#%% Count # of occurances
+#%% Sum log2 of each length
 x = list(range(1,longest+1))
 for day in ["1","2","3"]:
     fig, ax = plt.subplots()
@@ -118,7 +82,11 @@ for day in ["1","2","3"]:
             plt.title(label = "Day "+day)
             plt.xlabel('Peptide length (AA)')
             plt.ylabel('Relative intensity')
-            plt.show()
+    if (day == "3"):
+        plt.legend(handles = [linehandles[3]],labels = [linelabels[3]],loc="upper right")
+    else:
+        plt.legend(linehandles,linelabels,loc = 'upper right')
+    plt.show()
         
 
 

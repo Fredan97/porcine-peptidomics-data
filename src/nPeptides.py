@@ -38,7 +38,7 @@ for n in colorMap:
 markers = day.map({1: "o", 2: "s", 3: "X"}).tolist()
 
 #%% Fix font sizes and styles
-plt.rcParams['pdf.fonttype']=42
+plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
 #%% Plot the results

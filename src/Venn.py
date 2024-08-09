@@ -70,13 +70,13 @@ plt.rcParams["font.family"] = "Arial"
 
 
 #%% Make venn diagrams
-plt.figure()
+plt.figure(figsize=(3,3))
 matplotlib_venn.venn3(subsets = (setSa, setPa, setCtrl),set_labels = ("S.a","P.a","Ctrl"))
-plt.figure()
+plt.figure(figsize=(3,3))
 matplotlib_venn.venn3((setSaBlind,setPaBlind,setCtrlBlind),set_labels = ("S.a-blind","P.a-blind","Ctrl-blind"))
-plt.figure()
+plt.figure(figsize=(3,3))
 matplotlib_venn.venn2((setSa,setSaBlind),set_labels = ("S.a","S.a-blind"))
-plt.figure()
+plt.figure(figsize=(3,3))
 matplotlib_venn.venn2((setPa,setPaBlind),set_labels = ("P.a","P.a-blind"))
-plt.figure()
+plt.figure(figsize=(3,3))
 matplotlib_venn.venn2((setCtrl,setCtrlBlind),set_labels = ("Ctrl","Ctrl-blind"))
