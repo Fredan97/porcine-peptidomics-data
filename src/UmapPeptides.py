@@ -35,7 +35,7 @@ scaled_data = StandardScaler().fit_transform(transpdata)
 embedding = reducer.fit_transform(scaled_data)
 
 #%% Fix font sizes and styles
-plt.rcParams['pdf.fonttype']=42
+plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
 #%%
@@ -69,7 +69,6 @@ group_handles = [plt.Line2D([0,0],[0,0],color=sns.color_palette()[i], marker='o'
 plt.legend(day_handles + group_handles, day_labels + group_labels, loc='lower left')
 
 # Add title and labels
-plt.title('UMAP projection pig samples')
 plt.xlabel('UMAP 1')
 plt.ylabel('UMAP 2')
 

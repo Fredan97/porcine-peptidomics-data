@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#%% Import needed assets
 """
 Created on Wed Jul 10 15:19:29 2024
 
@@ -37,7 +37,7 @@ for sequence in df.iloc[2:,0]:
         longest = findLength(sequence)
 
 
-#%% Color and position dictionary
+#%% Create color and linestyle dictionary
 colorDict = {}
 colorDict["S.a"] = "gold"
 colorDict["P.a"] = "aqua"
@@ -45,21 +45,25 @@ colorDict["Ctrl"] = "black"
 colorDict["Double"] = "lime"
 colorDict["Acc Double"] = "red"
 
+styleDict = {}
+styleDict["1"] = "-"
+styleDict["2"] = "--"
+styleDict["3"] = ":"
 
 #%% Fix font sizes and styles
 plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
 #%% Create labels and handles for legend
-linehandles = [plt.Line2D([0,0],[0,0],color=colorDict[i], linestyle='-') for i in ["S.a","P.a","Ctrl","Double","Acc Double"]]
-linelabels = ["S.a","P.a","Ctrl","Double infection","Accidental double infection"]
-
-    
+grouphandles = [plt.Line2D([0,0],[0,0],color=colorDict[i], linestyle='-') for i in ["S.a","P.a","Ctrl","Double","Acc Double"]]
+grouplabels = ["S.a","P.a","Ctrl","Double infection","Accidental double infection"]
+dayhandles = [plt.Line2D([0,0],[0,0],color = "gray",linestyle = styleDict[i]) for i in ["1","2","3"]]
+daylabels = ["Day 1","Day 2","Day 3"]
              
-#%% Sum log2 of each length
+#%% Sum and plot log2 of each length
+fig, ax = plt.subplots()
 x = list(range(1,longest+1))
 for day in ["1","2","3"]:
-    fig, ax = plt.subplots()
     for group in ["S.a","P.a","Ctrl","Double","Acc Double"]:
         if not(day == "3" and group != "Double"):
             y = [0]*len(x)
@@ -69,25 +73,15 @@ for day in ["1","2","3"]:
                     if (group == groups.iloc[0,j]) and (str(days.iloc[0,j]) == day):
                         y[length-1] += data.iloc[i,j]
             sum_y = sum(y)
-            max_y = max(y)
-            if (max_y != 0):
-                maxstand_y = [float(k)/max_y for k in y]
-            else:
-                maxstand_y = y
             if (sum_y != 0):
                 sumstand_y = [float(k)/sum_y for k in y]
             else:
                 sumstand_y = y
-            ax.plot(x,sumstand_y,0.1,color = colorDict[group])
-            plt.title(label = "Day "+day)
-            plt.xlabel('Peptide length (AA)')
-            plt.ylabel('Relative intensity')
-    if (day == "3"):
-        plt.legend(handles = [linehandles[3]],labels = [linelabels[3]],loc="upper right")
-    else:
-        plt.legend(linehandles,linelabels,loc = 'upper right')
-    plt.show()
-        
+            ax.plot(x,sumstand_y,0.1,color = colorDict[group],linestyle = styleDict[day])
+plt.xlabel('Peptide length (AA)')
+plt.ylabel('Relative intensity')  
+plt.legend(grouphandles+dayhandles,grouplabels+daylabels,loc = 'upper right')
+plt.show()      
 
 
 
