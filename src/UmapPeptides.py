@@ -1,9 +1,5 @@
-import numpy as np
-from sklearn.datasets import load_digits
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
-import seaborn as sns
 import pandas as pd
 import umap
 import math
@@ -40,7 +36,7 @@ plt.rcParams["font.family"] = "Arial"
 
 #%%
 # Prepare colors and markers
-colors = group.map({"S.a": 0, "P.a": 1, "Ctrl": 2, "Double": 3, "Acc Double": 5}).tolist()
+colors = group.map({"S.a": "gold", "P.a": "aqua", "Ctrl": "black", "Double": "lime", "Acc Double": "red"}).tolist()
 markers = day.map({1: "o", 2: "s", 3: "X"}).tolist()
 
 # Create the scatter plot
@@ -54,19 +50,19 @@ for unique_day in unique_days:
     plt.scatter(
         embedding[idx, 0],
         embedding[idx, 1],
-        c=[sns.color_palette()[colors[i]] for i in idx],
+        c=[colors[i] for i in idx],
         label=f'Day {unique_day}',
         marker=marker_map[unique_day],
         edgecolor='w',  
-        s=100           
+        s=30           
     )
-
+handlecolors = ["black","gold","aqua","lime","red"]
 # Create a legend for days and markers
-day_handles = [plt.Line2D([0,0],[0,0],color='gray', marker=marker_map[day], linestyle='') for day in unique_days]
+day_handles = [plt.Line2D([0,0],[0,0],color='gray', marker=marker_map[day], linestyle='',markersize=5) for day in unique_days]
 day_labels = [f'Day {day}' for day in unique_days]
-group_labels = list({"S.a": 0, "P.a": 1, "Ctrl": 2, "Double": 3, "Acc Double": 5}.keys())
-group_handles = [plt.Line2D([0,0],[0,0],color=sns.color_palette()[i], marker='o', linestyle='') for i in [0,1,2,3,5]]
-plt.legend(day_handles + group_handles, day_labels + group_labels, loc='lower left')
+group_labels = ["Control","S.a","P.a","Double infection","Accidental double infection"]
+group_handles = [plt.Line2D([0,0],[0,0],color=handlecolors[i], marker='o', linestyle='',markersize=5) for i in [0,1,2,3,4]]
+plt.legend(day_handles + group_handles, day_labels + group_labels, loc= "upper left")
 
 # Add title and labels
 plt.xlabel('UMAP 1')

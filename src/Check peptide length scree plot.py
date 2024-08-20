@@ -55,8 +55,8 @@ plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
 #%% Create labels and handles for legend
-grouphandles = [plt.Line2D([0,0],[0,0],color=colorDict[i], linestyle='-') for i in ["S.a","P.a","Ctrl","Double","Acc Double"]]
-grouplabels = ["S.a","P.a","Ctrl","Double infection","Accidental double infection"]
+grouphandles = [plt.Line2D([0,0],[0,0],color=colorDict[i], linestyle='-') for i in ["Ctrl","S.a","P.a","Double","Acc Double"]]
+grouplabels = ["Ctrl","S.a","P.a","Double infection","Accidental double infection"]
 dayhandles = [plt.Line2D([0,0],[0,0],color = "gray",linestyle = styleDict[i]) for i in ["1","2","3"]]
 daylabels = ["Day 1","Day 2","Day 3"]
              

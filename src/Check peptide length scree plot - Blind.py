@@ -5,7 +5,6 @@ Created on Wed Jul 10 15:19:29 2024
 @author: fr1682fo
 """
 import pandas as pd
-import matplotlib
 import matplotlib.pyplot as plt
 import math
 
@@ -38,98 +37,50 @@ for sequence in df.iloc[2:,0]:
         longest = findLength(sequence)
 
 
-#%% Color and position dictionary
+#%% Create color and linestyle dictionary
 colorDict = {}
 colorDict["S.a"] = "gold"
 colorDict["P.a"] = "aqua"
 colorDict["Ctrl"] = "black"
+colorDict["Double"] = "lime"
+colorDict["Acc Double"] = "red"
 
-groupPosDict = {}
-groupPosDict["No"] = -1/2
-groupPosDict["Yes"] = 1/2
+styleDict = {}
+styleDict["No"] = "-"
+styleDict["Yes"] = "--"
 
 
 #%% Fix font sizes and styles
-plt.rcParams['pdf.fonttype']=42
+plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
+#%% Create labels and handles for legend
+grouphandles = [plt.Line2D([0,0],[0,0],color=colorDict[i], linestyle='-') for i in ["Ctrl","S.a","P.a"]]
+grouplabels = ["Ctrl","S.a","P.a"]
+blindhandles = [plt.Line2D([0,0],[0,0],color = "gray",linestyle = styleDict[i]) for i in ["No","Yes"]]
+blindlabels = ["Known","Blind"]
 
-#%% Plot day by day
-
-#Count if present in any sample
-
-
-
+#%% Sum and plot log2 of each length
+fig, ax = plt.subplots()
 x = list(range(1,longest+1))
-for group in ["S.a","P.a","Ctrl"]:
-    fig, ax = plt.subplots()
+for day in ["1"]:
     for blind in ["No","Yes"]:
-        y = [0]*len(x)
-        for i in range(data.shape[0]):
-            length = findLength(data.iloc[i,0])
-            n = 0
-            for j in range(1,data.shape[1]):
-                if (group == groups.iloc[0,j]) and (blinds.iloc[0,j] == blind) and 1 == days.iloc[0,j]:
-                    n += data.iloc[i,j]
-                    if n != 0:
-                        y[length-1] += 1
-                        break
-        sum_y = sum(y)
-        max_y = max(y)
-        if (max_y != 0):
-            maxstand_y = [float(k)/max_y for k in y]
-        else:
-            maxstand_y = y
-        if (sum_y != 0):
-            sumstand_y = [float(k)/sum_y for k in y]
-        else:
-            sumstand_y = y
-        
-        if blind == "Yes":
-            col = "red"
-        else:
-            col = colorDict[group]
-        ax.plot(x,sumstand_y,color = col)
-        plt.plot(label = group)
-        plt.xlabel('Peptide length (AA)')
-        plt.ylabel('Relative abundance')
-        plt.show()
-        
-        
-        
-    
-             
-#%% Sum up all occurances
-x = list(range(1,longest+1))
-for group in ["S.a","P.a","Ctrl"]:
-    fig, ax = plt.subplots()
-    for blind in ["No","Yes"]:
-        y = [0]*len(x)
-        for i in range(data.shape[0]):
-            length = findLength(data.iloc[i,0])
-            n = 0
-            for j in range(1,data.shape[1]):
-                if (group == groups.iloc[0,j]) and (blinds.iloc[0,j] == blind) and 1 == days.iloc[0,j]:
-                    y[length-1] += data.iloc[i,j]
-        sum_y = sum(y)
-        max_y = max(y)
-        if (max_y != 0):
-            maxstand_y = [float(k)/max_y for k in y]
-        else:
-            maxstand_y = y
-        if (sum_y != 0):
-            sumstand_y = [float(k)/sum_y for k in y]
-        else:
-            sumstand_y = y
-        
-        if blind == "Yes":
-            col = "red"
-        else:
-            col = colorDict[group]
-        ax.plot(x,sumstand_y,color = col)
-        plt.title(label = group)
-        plt.xlabel('Peptide length (AA)')
-        plt.ylabel('Relative intensity')
-        plt.show()
+        for group in ["S.a","P.a","Ctrl"]:
+            y = [0]*len(x)
+            for i in range(data.shape[0]):
+                length = findLength(data.iloc[i,0])
+                for j in range(1,data.shape[1]):
+                    if (group == groups.iloc[0,j]) and (blinds.iloc[0,j]) == blind:
+                        y[length-1] += data.iloc[i,j]
+            sum_y = sum(y)
+            if (sum_y != 0):
+                sumstand_y = [float(k)/sum_y for k in y]
+            else:
+                sumstand_y = y
+            ax.plot(x,sumstand_y,0.1,color = colorDict[group],linestyle = styleDict[blind])
+plt.xlabel('Peptide length (AA)')
+plt.ylabel('Relative intensity')  
+plt.legend(grouphandles+blindhandles,grouplabels+blindlabels,loc = 'upper right')
+plt.show()      
 
 

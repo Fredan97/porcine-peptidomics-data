@@ -1,7 +1,6 @@
 #%% Import needed assets
 import pandas as pd
 from matplotlib import pyplot as plt
-import seaborn as sns
 import random as rd
 
 #%% Import data
@@ -28,11 +27,14 @@ for colN in range(data.shape[1]):
 #%%Prepare dictionaries for plotting properties
 posMap = group.map({"Ctrl": 0, "S.a":1,"P.a":2,"Double":3,"Acc Double":4}).tolist()
 
-colorMap = group.map({"S.a": 0, "P.a": 1, "Ctrl": 2, "Double": 3, "Acc Double": 5}).tolist()
+colorMap = group.map({"S.a": "gold", "P.a": "aqua", "Ctrl": "black", "Double": "lime", "Acc Double": "red"}).tolist()
 
-colors = []
-for n in colorMap:
-    colors.append(sns.color_palette()[n])
+colorDict = {}
+colorDict["S.a"] = "gold"
+colorDict["P.a"] = "aqua"
+colorDict["Ctrl"] = "black"
+colorDict["Double"] = "lime"
+colorDict["Acc Double"] = "red"
 
 
 markers = day.map({1: "o", 2: "s", 3: "X"}).tolist()
@@ -47,7 +49,7 @@ for i in range(len(pepN)):
     plt.scatter(
         posMap[i]*0.6+day[i]*0.2+rd.uniform(0, 0.1),
         pepN[i],
-        color = colors[i],
+        color = colorMap[i],
         marker = markers[i],
         edgecolor='w',
         linewidths = 0.6)
@@ -57,7 +59,7 @@ unique_days = [1, 2, 3]
 day_handles = [plt.Line2D([0,0],[0,0],color='gray', marker={1: "o", 2: "s", 3: "X"}[day], linestyle='') for day in unique_days]
 day_labels = [f'Day {day}' for day in unique_days]
 group_labels = ["Ctrl","S.a","P.a","Double infection","Accidental double infection"]
-group_handles = [plt.Line2D([0,0],[0,0],color=sns.color_palette()[i], marker='o', linestyle='') for i in [2,0,1,3,5]]
+group_handles = [plt.Line2D([0,0],[0,0],color=colorDict[i], marker='o', linestyle='') for i in ["Ctrl","S.a","P.a","Double","Acc Double"]]
 plt.legend(day_handles + group_handles, day_labels + group_labels, loc='upper right')
 plt.tick_params(labelbottom = False, bottom = False)
 plt.ylabel("Observed peptides")
