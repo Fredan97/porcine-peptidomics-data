@@ -67,7 +67,6 @@ blind_handles = [plt.Line2D([0,0],[0,0],color='gray',marker = 'o',markeredgecolo
 plt.legend(day_handles + group_handles + blind_handles, day_labels + group_labels + blind_labels, loc='upper right')
 
 # Add title and labels
-plt.title('UMAP projection pig samples')
 plt.xlabel('UMAP 1')
 plt.ylabel('UMAP 2')
 
