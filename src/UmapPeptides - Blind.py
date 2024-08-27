@@ -5,7 +5,7 @@ import umap
 import math
 
 #%%
-reducer = umap.UMAP(random_state=62)
+reducer = umap.UMAP(random_state=3)
 #%%
 df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
 data = df.iloc[3:,1:]
@@ -18,13 +18,13 @@ blinds = df.iloc[2,1:]
 for x in range(data.shape[0]):
     for y in range(data.shape[1]):
         if data.iloc[x][y] != 0:
-            data.iloc[[x],[y]] = math.log(data.iloc[x][y],2)
+            data.iloc[x,y] = math.log(data.iloc[x][y],2)
 
 #%% Transpose data
 transpdata=data.transpose()
 
 
-#%%
+#%% Perform dimensionality reduction
 scaled_data = StandardScaler().fit_transform(transpdata)
 embedding = reducer.fit_transform(scaled_data)
 
@@ -64,7 +64,7 @@ group_labels = list(["Contorl","S.a", "P.a", "Double infection", "Accidental dou
 group_handles = [plt.Line2D([0,0],[0,0],color=handlecolors[i], marker='o', linestyle='',markersize=5) for i in [0,1,2,3,4]]
 blind_labels = list({"Blinded"})
 blind_handles = [plt.Line2D([0,0],[0,0],color='gray',marker = 'o',markeredgecolor = 'red', linestyle ='',markersize=5)]
-plt.legend(day_handles + group_handles + blind_handles, day_labels + group_labels + blind_labels, loc='upper right')
+plt.legend(day_handles + group_handles + blind_handles, day_labels + group_labels + blind_labels, loc='lower left')
 
 # Add title and labels
 plt.xlabel('UMAP 1')

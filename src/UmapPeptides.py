@@ -5,7 +5,7 @@ import umap
 import math
 
 #%%
-reducer = umap.UMAP(random_state=7)
+reducer = umap.UMAP(random_state=1)
 #%%
 df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups.xlsx")
 data = df.iloc[2:,1:]
@@ -19,7 +19,7 @@ day = df.iloc[0,1:]
 for x in range(data.shape[0]):
     for y in range(data.shape[1]):
         if data.iloc[x][y] != 0:
-            data.iloc[[x],[y]] = math.log(data.iloc[x][y],2)
+            data.iloc[x,y] = math.log(data.iloc[x][y],2)
             
 #%% Transpose data
 transpdata=data.transpose()            
@@ -62,7 +62,7 @@ day_handles = [plt.Line2D([0,0],[0,0],color='gray', marker=marker_map[day], line
 day_labels = [f'Day {day}' for day in unique_days]
 group_labels = ["Control","S.a","P.a","Double infection","Accidental double infection"]
 group_handles = [plt.Line2D([0,0],[0,0],color=handlecolors[i], marker='o', linestyle='',markersize=5) for i in [0,1,2,3,4]]
-plt.legend(day_handles + group_handles, day_labels + group_labels, loc= "upper left")
+plt.legend(day_handles + group_handles, day_labels + group_labels, loc= "upper right")
 
 # Add title and labels
 plt.xlabel('UMAP 1')

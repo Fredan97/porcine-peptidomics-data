@@ -4,67 +4,75 @@ from matplotlib import pyplot as plt
 import matplotlib_venn
 
 #%% Import data
-df = pd.read_excel("../data/Data Day 1.xlsx")
-dfblind = pd.read_excel("../data/Data_rerun_day1_OnlyPep_Nodups.xlsx")
+df = pd.read_excel("../data/Data Day 1 and 2 and 3 OnlyPep NoDups w Blind.xlsx")
 #%% Trim excess data
-data = df.iloc[:,1:51]
-data = data.drop(columns = ["Start", "End"])
-datablind = dfblind.drop(columns = ["Start", "End"])
-
+data = df.iloc[3:,:]
+groups = df.iloc[1,:]
+blinds = df.iloc[2,:]
 #%% Define used functions
-def lookForExistingPeptide(rowN, columnRange,data):
+def findRangeOfGroup(groups,blinds,blind,group):
+    rangeOfGroup = []
+    for i in range(len(groups)):
+        if groups[i] == group and blinds[i] == blind:
+            rangeOfGroup.append(i)
+    return rangeOfGroup
+
+def lookForExistingPeptide(rowN,columnRange,data):
     for colN in columnRange:
         if data.iloc[rowN][colN] > 0:
             return True
     return False
 
-def makeBooleanDataframe(booleanDf, data,saRange,paRange,ctrlRange):
+def makeBooleanDataframe(booleanDf, data,saRange,paRange,ctrlRange,saBlindRange,paBlindRange,ctrlBlindRange):
     for rowN in range(data.shape[0]):
         newRow = []
         newRow.append(data.iloc[rowN][0])
         inSa = lookForExistingPeptide(rowN, saRange, data)
         inPa = lookForExistingPeptide(rowN, paRange, data)
         inCtrl = lookForExistingPeptide(rowN, ctrlRange, data)
-        for x in [inSa,inPa,inCtrl]: newRow.append(x)
+        inSaBlind = lookForExistingPeptide(rowN, saBlindRange, data)
+        inPaBlind = lookForExistingPeptide(rowN, paBlindRange, data)
+        inCtrlBlind = lookForExistingPeptide(rowN, ctrlBlindRange, data)
+        for x in [inSa,inPa,inCtrl,inSaBlind,inPaBlind,inCtrlBlind]: newRow.append(x)
         booleanDf.loc[len(booleanDf)] = newRow
         
 def makeSets(booleanDf):
     setSa = set()
     setPa = set()
     setCtrl = set()
-    setList = [setSa, setPa, setCtrl]
+    setSaBlind = set()
+    setPaBlind = set()
+    setCtrlBlind = set()
+    setList = [setSa, setPa, setCtrl, setSaBlind, setPaBlind, setCtrlBlind]
     for rowN in range(booleanDf.shape[0]):
-        for colN in [1,2,3]:
-            if booleanDf.iloc[rowN][colN] == True:
-                setList[colN-1].add(booleanDf.iloc[rowN][0])
+        for colN in range(len(setList)):
+            if booleanDf.iloc[rowN][colN+1] == True:
+                setList[colN].add(booleanDf.iloc[rowN][0])
     return setList
 #%% Convert to boolean dataframes
 
 #Create empty dataframes
-booleanDf = pd.DataFrame(columns = ["Peptide","S.a","P.a","Ctrl"])
-booleanDfBlind = pd.DataFrame(columns = ["Peptide","S.a-blind","P.a-blind","Ctrl-blind"])
+booleanDf = pd.DataFrame(columns = ["Peptide","S.a","P.a","Ctrl","S.a-blind","P.a-blind","Ctrl-blind"])
 
 #Define range of groups in dataframes
-saRange = range(1,18)
-paRange = range(18,35)
-ctrlRange = range(35,48)
-saBlindRange = [9,10,11,12]
-paBlindRange = [1,2,4,8]
-ctrlBlindRange = [3,5,6,7]
+saRange = findRangeOfGroup(groups,blinds,"No","S.a")
+paRange = findRangeOfGroup(groups,blinds,"No","P.a")
+ctrlRange = findRangeOfGroup(groups,blinds,"No","Ctrl")
+saBlindRange = findRangeOfGroup(groups,blinds,"Yes","S.a")
+paBlindRange = findRangeOfGroup(groups,blinds,"Yes","P.a")
+ctrlBlindRange = findRangeOfGroup(groups,blinds,"Yes","Ctrl")
 
 
 #Go through datasets and convert to boolean
-makeBooleanDataframe(booleanDf,data,saRange,paRange,ctrlRange)
-makeBooleanDataframe(booleanDfBlind,datablind,saBlindRange,paBlindRange,ctrlBlindRange)
+makeBooleanDataframe(booleanDf,data,saRange,paRange,ctrlRange,saBlindRange,paBlindRange,ctrlBlindRange)
 
 
 #%% Make sets from boolean dataframes
-[setSa, setPa, setCtrl] = makeSets(booleanDf)
-[setSaBlind, setPaBlind, setCtrlBlind] = makeSets(booleanDfBlind)
+[setSa, setPa, setCtrl, setSaBlind, setPaBlind, setCtrlBlind] = makeSets(booleanDf)
 
 
 #%% Fix font sizes and styles
-plt.rcParams['pdf.fonttype']=42
+plt.rcParams['font.size']=7
 plt.rcParams["font.family"] = "Arial"
 
 

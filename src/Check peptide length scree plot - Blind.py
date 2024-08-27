@@ -20,7 +20,7 @@ blinds = df.iloc[2:3,:]
 for x in range(data.shape[0]):
     for y in range(data.shape[1]-1):
         if data.iloc[x][y+1] != 0:
-            data.iloc[[x],[y+1]] =  math.log(data.iloc[x][y+1],2)
+            data.iloc[x,y+1] =  math.log(data.iloc[x][y+1],2)
 
 #%%
 def findLength(seq):

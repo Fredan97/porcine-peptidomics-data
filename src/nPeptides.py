@@ -45,6 +45,7 @@ plt.rcParams["font.family"] = "Arial"
 
 #%% Plot the results
 plt.figure(figsize = (5,4.5))
+
 for i in range(len(pepN)):
     plt.scatter(
         posMap[i]*0.6+day[i]*0.2+rd.uniform(0, 0.1),
@@ -53,8 +54,7 @@ for i in range(len(pepN)):
         marker = markers[i],
         edgecolor='w',
         linewidths = 0.6)
-
-
+    
 unique_days = [1, 2, 3]
 day_handles = [plt.Line2D([0,0],[0,0],color='gray', marker={1: "o", 2: "s", 3: "X"}[day], linestyle='') for day in unique_days]
 day_labels = [f'Day {day}' for day in unique_days]
@@ -64,5 +64,4 @@ plt.legend(day_handles + group_handles, day_labels + group_labels, loc='upper ri
 plt.tick_params(labelbottom = False, bottom = False)
 plt.ylabel("Observed peptides")
 plt.xlim([0,4])
-
 plt.show()

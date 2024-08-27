@@ -5,7 +5,6 @@ Created on Wed Jul 10 15:19:29 2024
 @author: fr1682fo
 """
 import pandas as pd
-import matplotlib
 import matplotlib.pyplot as plt
 import math
 
@@ -20,7 +19,7 @@ groups = df.iloc[1:2,:]
 for x in range(data.shape[0]):
     for y in range(data.shape[1]-1):
         if data.iloc[x][y+1] != 0:
-            data.iloc[[x],[y+1]] = math.log(data.iloc[x][y+1],2)
+            data.iloc[x,y+1] = math.log(data.iloc[x][y+1],2)
 
 #%% Define needed functions
 def findLength(seq):
@@ -66,18 +65,19 @@ x = list(range(1,longest+1))
 for day in ["1","2","3"]:
     for group in ["S.a","P.a","Ctrl","Double","Acc Double"]:
         if not(day == "3" and group != "Double"):
-            y = [0]*len(x)
-            for i in range(data.shape[0]):
-                length = findLength(data.iloc[i,0])
-                for j in range(1,data.shape[1]):
-                    if (group == groups.iloc[0,j]) and (str(days.iloc[0,j]) == day):
-                        y[length-1] += data.iloc[i,j]
-            sum_y = sum(y)
-            if (sum_y != 0):
-                sumstand_y = [float(k)/sum_y for k in y]
-            else:
-                sumstand_y = y
-            ax.plot(x,sumstand_y,0.1,color = colorDict[group],linestyle = styleDict[day])
+            if not(day == "1" and group == "Double"):
+                y = [0]*len(x)
+                for i in range(data.shape[0]):
+                    length = findLength(data.iloc[i,0])
+                    for j in range(1,data.shape[1]):
+                        if (group == groups.iloc[0,j]) and (str(days.iloc[0,j]) == day):
+                            y[length-1] += data.iloc[i,j]
+                sum_y = sum(y)
+                if (sum_y != 0):
+                    sumstand_y = [float(k)/sum_y for k in y]
+                else:
+                    sumstand_y = y
+                ax.plot(x,sumstand_y,0.1,color = colorDict[group],linestyle = styleDict[day])
 plt.xlabel('Peptide length (AA)')
 plt.ylabel('Relative intensity')  
 plt.legend(grouphandles+dayhandles,grouplabels+daylabels,loc = 'upper right')
