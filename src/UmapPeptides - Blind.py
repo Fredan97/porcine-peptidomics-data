@@ -62,7 +62,7 @@ day_handles = [plt.Line2D([0,0],[0,0],color='gray', marker=marker_map[day], line
 day_labels = [f'Day {day}' for day in unique_days]
 group_labels = list(["Contorl","S.a", "P.a", "Double infection", "Accidental double infection"])
 group_handles = [plt.Line2D([0,0],[0,0],color=handlecolors[i], marker='o', linestyle='',markersize=5) for i in [0,1,2,3,4]]
-blind_labels = list({"Blinded"})
+blind_labels = list({"Blind"})
 blind_handles = [plt.Line2D([0,0],[0,0],color='gray',marker = 'o',markeredgecolor = 'red', linestyle ='',markersize=5)]
 plt.legend(day_handles + group_handles + blind_handles, day_labels + group_labels + blind_labels, loc='lower left')
 
