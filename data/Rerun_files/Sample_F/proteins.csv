@@ -1,0 +1,27 @@
+Protein Group,Protein ID,Accession,-10lgP,Coverage (%),Coverage (%) Sample 6,Area Sample 6,#Peptides,#Unique,#Spec Sample 6,PTM,Avg. Mass,Description
+4,6,P02067|HBB_PIG,232.68,47,47,4.4855E4,45,45,77,Oxidation (M),16166,Hemoglobin subunit beta OS=Sus scrofa OX=9823 GN=HBB PE=1 SV=3
+5,9,P27917|APOC3_PIG,216.43,54,54,3.2908E4,35,35,60,Oxidation (M),10704,Apolipoprotein C-III OS=Sus scrofa OX=9823 GN=APOC3 PE=1 SV=2
+2,30,tr|F1RX37|F1RX37_PIG,208.31,8,8,1.0546E6,31,31,223,,60843,Fibrinogen beta chain OS=Sus scrofa OX=9823 GN=FGB PE=1 SV=4
+3,2,P01965|HBA_PIG,201.79,67,67,8.692E4,37,37,126,Oxidation (M),15039,Hemoglobin subunit alpha OS=Sus scrofa OX=9823 GN=HBA PE=1 SV=1
+1,1,tr|F1RX36|F1RX36_PIG,195.79,11,11,6.5494E5,26,26,369,Oxidation (M),101096,Fibrinogen alpha chain OS=Sus scrofa OX=9823 GN=FGA PE=1 SV=4
+6,50,Q95JC9|PRP_PIG,120.40,9,9,3.9962E4,10,10,40,,62283,Basic proline-rich protein OS=Sus scrofa OX=9823 PE=1 SV=2
+8,554,P02725|GLPA_PIG,116.15,19,19,3.016E3,6,6,12,,14000,Glycophorin-A OS=Sus scrofa OX=9823 GN=GYPA PE=1 SV=1
+9,45,Q95274|TYB4_PIG,104.06,55,55,2.5644E3,6,6,8,,5053,Thymosin beta-4 OS=Sus scrofa OX=9823 GN=TMSB4 PE=3 SV=3
+12,26,P19619|ANXA1_PIG,98.89,3,3,1.7135E2,3,3,4,,38759,Annexin A1 OS=Sus scrofa OX=9823 GN=ANXA1 PE=1 SV=3
+7,5,P51525|PF12_PIG,93.82,14,14,9.025E4,6,6,34,,25855,Prophenin-2 OS=Sus scrofa OX=9823 PE=2 SV=1
+7,4,P51524|PF11_PIG,93.82,15,15,9.025E4,6,6,34,,23956,Prophenin and tritrpticin precursor (Fragment) OS=Sus scrofa OX=9823 PE=1 SV=1
+10,8,Q6QAQ1|ACTB_PIG,93.05,7,7,1.361E3,4,4,5,,41737,Actin  cytoplasmic 1 OS=Sus scrofa OX=9823 GN=ACTB PE=1 SV=2
+11,19,Q19AZ8|THRB_PIG,90.52,5,5,7.569E2,3,3,4,,70066,Prothrombin OS=Sus scrofa OX=9823 GN=F2 PE=2 SV=1
+13,22,P18650|APOE_PIG,89.42,6,6,1.178E3,4,4,4,Oxidation (M),36599,Apolipoprotein E OS=Sus scrofa OX=9823 GN=APOE PE=1 SV=2
+14,29,P01025|CO3_PIG,65.40,3,3,1.6159E3,3,3,3,Oxidation (M),186806,Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 SV=2
+20,91,O19084|CDSN_PIG,45.99,5,5,2.5875E2,1,1,1,,21644,Corneodesmosin (Fragment) OS=Sus scrofa OX=9823 GN=CDSN PE=3 SV=1
+25,32,P80272|HMGN2_PIG,45.43,14,14,0,1,1,1,,9379,Non-histone chromosomal protein HMG-17 OS=Sus scrofa OX=9823 GN=HMGN2 PE=1 SV=2
+15,321,O97507|FA12_PIG,42.92,2,2,5.429E2,1,1,2,,68012,Coagulation factor XII OS=Sus scrofa OX=9823 GN=F12 PE=2 SV=1
+27,3,P18648|APOA1_PIG,33.28,6,6,0,1,1,1,,30325,Apolipoprotein A-I OS=Sus scrofa OX=9823 GN=APOA1 PE=1 SV=4
+22,130,P06348|H1T_PIG,32.50,5,5,0,1,1,1,,22059,Histone H1t OS=Sus scrofa OX=9823 GN=H1-6 PE=1 SV=1
+19,1843,Q29073|PTGR1_PIG,32.32,3,3,0,1,1,1,,35762,Prostaglandin reductase 1 OS=Sus scrofa OX=9823 GN=PTGR1 PE=1 SV=1
+24,177,Q9GLP2|PROC_PIG,32.08,3,3,0,1,1,1,,51867,Vitamin K-dependent protein C OS=Sus scrofa OX=9823 GN=PROC PE=2 SV=1
+23,2140,C5HGF3|TMCO1_PIG,32.02,6,6,1.54E3,1,1,1,,21175,Calcium load-activated calcium channel OS=Sus scrofa OX=9823 GN=TMCO1 PE=2 SV=1
+18,7,P80054|PR39_PIG,31.95,7,7,0,1,1,1,,19477,Antibacterial protein PR-39 OS=Sus scrofa OX=9823 GN=PR39 PE=1 SV=2
+26,978,P62901|RL31_PIG,31.78,18,18,0,1,1,1,,14463,60S ribosomal protein L31 OS=Sus scrofa OX=9823 GN=RPL31 PE=1 SV=1
+16,497,A0P8Z5|UIMC1_PIG,31.66,2,2,3.334E2,1,1,2,,79863,BRCA1-A complex subunit RAP80 OS=Sus scrofa OX=9823 GN=UIMC1 PE=1 SV=1

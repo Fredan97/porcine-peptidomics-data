@@ -1,0 +1,7 @@
+matplotlib
+seaborn
+biopython
+numpy
+pandas
+umap_learn
+scikit-learn
