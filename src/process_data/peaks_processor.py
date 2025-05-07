@@ -13,6 +13,9 @@ def load_peptide_file(filepath: str) -> pd.DataFrame:
     try:
         df = pd.read_csv(filepath)
         
+        # Store the folder path
+        folder_path = os.path.dirname(filepath)
+        
         # Check if this is a rerun file
         if 'Rerun_files' in filepath:
             # Extract sample ID from rerun files (Sample_A, Sample_B, etc.)
@@ -37,6 +40,7 @@ def load_peptide_file(filepath: str) -> pd.DataFrame:
                 print(f"No sample number found in {filepath}, using directory name: {sample_id}")
 
         df['Sample_ID'] = sample_id
+        df['Folder'] = folder_path
         return df
     
     except Exception as e:
@@ -64,13 +68,18 @@ def load_peptide_files(data_dir: str) -> Dict[str, pd.DataFrame]:
         print(f"Found {len(peptide_files)} peptide files")
     
     results = {}
+    sample_folders = {}  # Dictionary to store folder paths for each sample
+    
     for filepath in peptide_files:
         df = load_peptide_file(filepath)
         if not df.empty:
             sample_id = df['Sample_ID'].iloc[0]
             results[sample_id] = df
+            # Store the folder path for this sample
+            sample_folders[sample_id] = df['Folder'].iloc[0]
     
-    return results
+    # Return both the data and the folder information
+    return results, sample_folders
 
 
 def create_data_matrix(peptide_data: Dict[str, pd.DataFrame], 
@@ -150,9 +159,13 @@ def process_data(data_dir: str, design_file: str) -> Tuple[pd.DataFrame, pd.Data
     Process all peptide data and merge with experimental design.
     
     """
-    peptide_data = load_peptide_files(data_dir)
+    peptide_data, sample_folders = load_peptide_files(data_dir)
     data_matrix = create_data_matrix(peptide_data)
     design_matrix = load_design_matrix(design_file)
+    
+    # Add folder information to design matrix
+    folder_series = pd.Series(sample_folders, name='folder')
+    design_matrix = design_matrix.copy()
     
     if 'Rerun_files' in data_dir:
         print("Processing rerun files - mapping blinded labels to sample names")
@@ -160,17 +173,31 @@ def process_data(data_dir: str, design_file: str) -> Tuple[pd.DataFrame, pd.Data
         blinded_map = dict(zip(design_df['blinded_label'], design_df['sample_name']))
         
         new_columns = {}
+        folder_map = {}  # To keep track of folder mappings
         for col in data_matrix.columns:
             if col in blinded_map:
-                new_columns[col] = blinded_map[col]
-                print(f"Mapping {col} to {blinded_map[col]}")
+                new_name = blinded_map[col]
+                new_columns[col] = new_name
+                # Also map the folder information
+                if col in sample_folders:
+                    folder_map[new_name] = sample_folders[col]
+                print(f"Mapping {col} to {new_name}")
             else:
                 new_columns[col] = col
                 print(f"No mapping found for {col}")
         
         data_matrix = data_matrix.rename(columns=new_columns)
+        # Update sample_folders with the new names
+        sample_folders = {new_columns.get(k, k): v for k, v in sample_folders.items()}
+        sample_folders.update(folder_map)
     
     merged_data, filtered_design = merge_data_with_design(data_matrix, design_matrix)
+    
+    # Add folder information to filtered design using the matched sample IDs
+    for sample_id in filtered_design.index:
+        if sample_id in sample_folders:
+            filtered_design.loc[sample_id, 'folder'] = sample_folders[sample_id]
+    
     merged_data = merged_data.replace(0, np.nan)
     return merged_data, filtered_design
 
