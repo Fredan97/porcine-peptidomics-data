@@ -139,7 +139,6 @@ def merge_data_with_design(data_matrix: pd.DataFrame, design_matrix: pd.DataFram
         print("No matching samples found between data and design matrices")
         return data_matrix, design_matrix
     
-    # Filter the matrices to only include common samples
     filtered_data = data_matrix[sorted(common_samples)]
     filtered_design = design_matrix.loc[sorted(common_samples)]
     
@@ -155,16 +154,11 @@ def process_data(data_dir: str, design_file: str) -> Tuple[pd.DataFrame, pd.Data
     data_matrix = create_data_matrix(peptide_data)
     design_matrix = load_design_matrix(design_file)
     
-    # If we're processing rerun files, map blinded labels to actual sample names
     if 'Rerun_files' in data_dir:
         print("Processing rerun files - mapping blinded labels to sample names")
-        
-        # For rerun files, we need to access the original design dataframe before indexing
-        # to get the blinded_label column
         design_df = pd.read_csv(design_file)
         blinded_map = dict(zip(design_df['blinded_label'], design_df['sample_name']))
         
-        # Rename columns in data matrix using the mapping
         new_columns = {}
         for col in data_matrix.columns:
             if col in blinded_map:
