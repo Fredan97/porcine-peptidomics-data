@@ -1,0 +1,126 @@
+Protein Group,Protein ID,Accession,-10lgP,Coverage (%),Coverage (%) Sample 49,Area Sample 49,#Peptides,#Unique,#Spec Sample 49,PTM,Avg. Mass,Description
+1,1,tr|F1RX36|F1RX36_PIG,573.31,45,45,8.9967E6,421,421,1513,Oxidation (M),101096,Fibrinogen alpha chain OS=Sus scrofa OX=9823 GN=FGA PE=1 SV=4
+2,2,P01965|HBA_PIG,539.29,97,97,3.1548E6,355,355,1110,Oxidation (M),15039,Hemoglobin subunit alpha OS=Sus scrofa OX=9823 GN=HBA PE=1 SV=1
+5,13,P27917|APOC3_PIG,520.82,79,79,6.1459E6,188,188,787,Oxidation (M),10704,Apolipoprotein C-III OS=Sus scrofa OX=9823 GN=APOC3 PE=1 SV=2
+6,6,tr|F1RX37|F1RX37_PIG,472.58,34,34,9.9335E6,117,117,777,Oxidation (M),60843,Fibrinogen beta chain OS=Sus scrofa OX=9823 GN=FGB PE=1 SV=4
+8,9,P02067|HBB_PIG,432.59,73,73,6.6049E5,105,105,257,Oxidation (M),16166,Hemoglobin subunit beta OS=Sus scrofa OX=9823 GN=HBB PE=1 SV=3
+9,5,P18648|APOA1_PIG,411.50,74,74,1.1183E6,94,94,250,Oxidation (M),30325,Apolipoprotein A-I OS=Sus scrofa OX=9823 GN=APOA1 PE=1 SV=4
+11,3,Q6QAQ1|ACTB_PIG,406.93,69,69,1.9515E5,125,63,206,Oxidation (M),41737,Actin  cytoplasmic 1 OS=Sus scrofa OX=9823 GN=ACTB PE=1 SV=2
+3,7,P51524|PF11_PIG,400.65,67,67,4.4502E5,122,6,1072,,23956,Prophenin and tritrpticin precursor (Fragment) OS=Sus scrofa OX=9823 PE=1 SV=1
+4,8,P51525|PF12_PIG,397.67,62,62,0,117,1,1021,,25855,Prophenin-2 OS=Sus scrofa OX=9823 PE=2 SV=1
+10,26,P0DSO0|SAA2_PIG,380.83,83,83,3.8713E5,100,100,218,Oxidation (M),14418,Serum amyloid A-2 protein OS=Sus scrofa OX=9823 GN=SAA2 PE=3 SV=1
+18,15,P19619|ANXA1_PIG,369.22,19,19,2.2472E5,45,45,80,Oxidation (M),38759,Annexin A1 OS=Sus scrofa OX=9823 GN=ANXA1 PE=1 SV=3
+7,12,P80054|PR39_PIG,325.22,47,47,2.1571E5,51,15,278,,19477,Antibacterial protein PR-39 OS=Sus scrofa OX=9823 GN=PR39 PE=1 SV=2
+15,31,P18650|APOE_PIG,323.24,41,41,2.6149E5,39,39,89,Oxidation (M),36599,Apolipoprotein E OS=Sus scrofa OX=9823 GN=APOE PE=1 SV=2
+14,11,P68137|ACTS_PIG,320.99,55,55,9.341E2,65,3,94,Oxidation (M),42051,Actin  alpha skeletal muscle OS=Sus scrofa OX=9823 GN=ACTA1 PE=1 SV=1
+16,10,Q19AZ8|THRB_PIG,310.88,22,22,2.9446E5,37,37,82,Oxidation (M),70066,Prothrombin OS=Sus scrofa OX=9823 GN=F2 PE=2 SV=1
+21,84,P62936|PPIA_PIG,310.47,40,40,1.2369E5,34,34,58,Oxidation (M),17869,Peptidyl-prolyl cis-trans isomerase A OS=Sus scrofa OX=9823 GN=PPIA PE=1 SV=2
+13,23,P49930|PMP23_PIG,302.09,37,37,0,37,1,96,,17486,Antibacterial peptide PMAP-23 OS=Sus scrofa OX=9823 GN=PMAP23 PE=2 SV=1
+19,4,P02543|VIME_PIG,294.92,28,28,7.7451E4,44,44,68,Oxidation (M),53668,Vimentin OS=Sus scrofa OX=9823 GN=VIM PE=1 SV=2
+12,24,P29700|FETUA_PIG,284.74,22,22,2.993E5,37,37,109,Oxidation (M),38425,Alpha-2-HS-glycoprotein (Fragment) OS=Sus scrofa OX=9823 GN=AHSG PE=1 SV=1
+22,14,P00355|G3P_PIG,276.16,54,54,8.192E4,35,35,56,Oxidation (M),35836,Glyceraldehyde-3-phosphate dehydrogenase OS=Sus scrofa OX=9823 GN=GAPDH PE=1 SV=4
+17,61,P06348|H1T_PIG,262.56,36,36,3.9029E5,28,28,83,,22059,Histone H1t OS=Sus scrofa OX=9823 GN=H1-6 PE=1 SV=1
+25,700,P80272|HMGN2_PIG,253.21,84,84,6.38E4,12,12,32,,9379,Non-histone chromosomal protein HMG-17 OS=Sus scrofa OX=9823 GN=HMGN2 PE=1 SV=2
+20,27,P01025|CO3_PIG,250.15,10,10,1.2798E5,34,34,67,Oxidation (M),186806,Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 SV=2
+24,77,Q95274|TYB4_PIG,248.08,73,73,1.1278E5,15,15,33,,5053,Thymosin beta-4 OS=Sus scrofa OX=9823 GN=TMSB4 PE=3 SV=3
+26,33,P08835|ALBU_PIG,226.67,16,16,2.5378E4,17,17,31,,69692,Albumin OS=Sus scrofa OX=9823 GN=ALB PE=1 SV=2
+35,1861,O46409|APOA4_PIG,197.85,17,17,1.1329E4,10,10,12,,43294,Apolipoprotein A-IV OS=Sus scrofa OX=9823 GN=APOA4 PE=2 SV=1
+28,82,Q29549|CLUS_PIG,197.69,24,24,1.5364E4,12,12,22,Oxidation (M),51775,Clusterin OS=Sus scrofa OX=9823 GN=CLU PE=1 SV=1
+34,38,Q3BDI7|DSG1_PIG,189.99,7,7,2.0048E4,10,10,12,,113318,Desmoglein-1 OS=Sus scrofa OX=9823 GN=DSG1 PE=2 SV=1
+32,697,P62901|RL31_PIG,189.14,26,26,1.352E4,7,7,16,,14463,60S ribosomal protein L31 OS=Sus scrofa OX=9823 GN=RPL31 PE=1 SV=1
+31,593,O02668|ITIH2_PIG,182.49,9,9,7.0718E3,9,9,16,Oxidation (M),104622,Inter-alpha-trypsin inhibitor heavy chain H2 OS=Sus scrofa OX=9823 GN=ITIH2 PE=2 SV=1
+44,59,P06867|PLMN_PIG,180.49,2,2,1.5328E4,7,7,9,,90615,Plasminogen OS=Sus scrofa OX=9823 GN=PLG PE=1 SV=3
+37,136,P53714|ITB2_PIG,170.79,9,9,1.0906E4,7,7,11,,84790,Integrin beta-2 OS=Sus scrofa OX=9823 GN=ITGB2 PE=2 SV=1
+47,60,P09571|TRFE_PIG,167.26,7,7,2.7194E3,6,6,8,,76968,Serotransferrin OS=Sus scrofa OX=9823 GN=TF PE=1 SV=2
+43,76,Q29308|RS19_PIG,165.36,21,21,1.0879E4,5,5,10,,15103,40S ribosomal protein S19 (Fragment) OS=Sus scrofa OX=9823 GN=RPS19 PE=2 SV=3
+42,802,P29269|MYL9_PIG,164.46,11,11,9.4721E3,5,5,10,Oxidation (M),19827,Myosin regulatory light polypeptide 9 OS=Sus scrofa OX=9823 GN=MYL9 PE=1 SV=2
+30,133,Q95JC9|PRP_PIG,156.93,6,6,2.5015E4,8,7,17,,62283,Basic proline-rich protein OS=Sus scrofa OX=9823 PE=1 SV=2
+29,47,O97507|FA12_PIG,156.88,3,3,6.9214E4,5,5,20,,68012,Coagulation factor XII OS=Sus scrofa OX=9823 GN=F12 PE=2 SV=1
+36,46,P14632|TRFL_PIG,153.44,9,9,1.3923E4,8,8,12,,77626,Lactotransferrin OS=Sus scrofa OX=9823 GN=LTF PE=1 SV=3
+40,1703,Q07717|B2MG_PIG,152.25,43,43,9.0476E3,8,8,11,Oxidation (M),13362,Beta-2-microglobulin OS=Sus scrofa OX=9823 GN=B2M PE=1 SV=1
+41,37,Q5S1U1|HSPB1_PIG,151.00,26,26,7.9602E3,5,5,10,,22942,Heat shock protein beta-1 OS=Sus scrofa OX=9823 GN=HSPB1 PE=2 SV=1
+39,81,O19084|CDSN_PIG,149.98,34,34,1.117E4,9,9,11,Oxidation (M),21644,Corneodesmosin (Fragment) OS=Sus scrofa OX=9823 GN=CDSN PE=3 SV=1
+38,302,P80015|CAP7_PIG,145.93,17,17,8.5048E3,8,8,11,,27039,Azurocidin OS=Sus scrofa OX=9823 GN=AZU1 PE=1 SV=2
+33,63,P79263|ITIH4_PIG,143.27,6,6,2.3069E4,7,7,14,,102146,Inter-alpha-trypsin inhibitor heavy chain H4 OS=Sus scrofa OX=9823 GN=ITIH4 PE=1 SV=1
+50,29,Q767L7|TBB5_PIG,140.18,16,16,2.5266E3,5,5,7,Oxidation (M),49671,Tubulin beta chain OS=Sus scrofa OX=9823 GN=TUBB PE=1 SV=1
+51,696,Q7SIB7|PGK1_PIG,140.03,14,14,3.9118E3,5,5,7,Oxidation (M),44559,Phosphoglycerate kinase 1 OS=Sus scrofa OX=9823 GN=PGK1 PE=1 SV=3
+45,766,Q9GLP2|PROC_PIG,138.93,4,4,2.8492E4,5,5,9,,51867,Vitamin K-dependent protein C OS=Sus scrofa OX=9823 GN=PROC PE=2 SV=1
+52,190,P50390|TTHY_PIG,137.03,11,11,6.907E3,4,4,7,,16081,Transthyretin OS=Sus scrofa OX=9823 GN=TTR PE=1 SV=1
+53,715,P02725|GLPA_PIG,134.35,18,18,5.6761E3,4,4,7,,14000,Glycophorin-A OS=Sus scrofa OX=9823 GN=GYPA PE=1 SV=1
+46,53,Q9GLP1|FA5_PIG,129.63,2,2,2.0878E2,6,6,8,Oxidation (M),256078,Coagulation factor V OS=Sus scrofa OX=9823 GN=F5 PE=2 SV=1
+49,40,Q29099|PTBP1_PIG,128.92,4,4,1.1977E4,5,5,7,,59694,Polypyrimidine tract-binding protein 1 OS=Sus scrofa OX=9823 GN=PTBP1 PE=2 SV=2
+54,96,P16469|LOX15_PIG,127.56,8,8,4.7186E3,6,6,6,Oxidation (M),75004,Polyunsaturated fatty acid lipoxygenase ALOX15 OS=Sus scrofa OX=9823 GN=ALOX15 PE=1 SV=3
+61,185,P02550|TBA1A_PIG,124.69,10,10,2.8518E3,3,3,4,,50069,Tubulin alpha-1A chain OS=Sus scrofa OX=9823 GN=TUBA1A PE=1 SV=1
+56,2612,P21753|TYB10_PIG,123.62,57,57,3.4815E3,4,4,6,,4823,Thymosin beta-10 OS=Sus scrofa OX=9823 GN=TMSB10 PE=1 SV=2
+58,83,P50447|A1AT_PIG,121.38,6,6,4.9169E3,3,3,5,,47194,Alpha-1-antitrypsin OS=Sus scrofa OX=9823 GN=SERPINA1 PE=2 SV=1
+71,1705,Q8MJ49|OSTF1_PIG,117.64,26,26,3.3125E3,3,3,3,Oxidation (M),23740,Osteoclast-stimulating factor 1 OS=Sus scrofa OX=9823 GN=OSTF1 PE=2 SV=1
+63,286,P48819|VTNC_PIG,113.44,9,9,1.641E3,3,3,4,Oxidation (M),52572,Vitronectin OS=Sus scrofa OX=9823 GN=VTN PE=1 SV=1
+57,12092,P63221|RS21_PIG,111.82,40,40,2.123E3,4,4,6,Oxidation (M),9111,40S ribosomal protein S21 OS=Sus scrofa OX=9823 GN=RPS21 PE=1 SV=1
+60,108,P80310|S10AC_PIG,111.62,25,25,8.8749E3,3,3,5,,10745,Protein S100-A12 OS=Sus scrofa OX=9823 GN=S100A12 PE=1 SV=2
+62,56,P10668|COF1_PIG,107.77,21,21,9.8496E3,4,4,4,Oxidation (M),18519,Cofilin-1 OS=Sus scrofa OX=9823 GN=CFL1 PE=1 SV=3
+64,5221,P12309|GLRX1_PIG,105.81,20,20,4.131E3,3,3,4,,11828,Glutaredoxin-1 OS=Sus scrofa OX=9823 GN=GLRX PE=1 SV=2
+23,16,P62802|H4_PIG,102.32,39,39,1.1363E5,3,3,37,Oxidation (M),11367,Histone H4 OS=Sus scrofa OX=9823 PE=1 SV=2
+48,39,P0DW16|RBM20_PIG,95.65,2,2,4.5808E3,3,2,7,Oxidation (M),133295,RNA-binding protein 20 OS=Sus scrofa OX=9823 GN=RBM20 PE=1 SV=1
+72,2624,P60662|MYL6_PIG,92.67,17,17,1.0424E3,2,2,3,Oxidation (M),16930,Myosin light polypeptide 6 OS=Sus scrofa OX=9823 GN=MYL6 PE=1 SV=2
+55,489,P17741|HMGB2_PIG,92.23,19,19,3.2661E4,3,3,6,Oxidation (M),24133,High mobility group protein B2 OS=Sus scrofa OX=9823 GN=HMGB2 PE=1 SV=2
+77,373,Q6S4N2|HS71B_PIG,90.57,2,2,1.9397E3,2,2,2,,70098,Heat shock 70 kDa protein 1B OS=Sus scrofa OX=9823 GN=HSPA1B PE=2 SV=1
+77,299,P34930|HS71A_PIG,90.57,2,2,1.9397E3,2,2,2,,70083,Heat shock 70 kDa protein 1A OS=Sus scrofa OX=9823 GN=HSPA1A PE=3 SV=1
+77,438,A5A8V7|HS71L_PIG,90.57,2,2,1.9397E3,2,2,2,,70344,Heat shock 70 kDa protein 1-like OS=Sus scrofa OX=9823 GN=HSPA1L PE=2 SV=1
+74,2631,Q95281|RL29_PIG,88.05,19,19,2.3998E3,2,2,3,,17498,60S ribosomal protein L29 OS=Sus scrofa OX=9823 GN=RPL29 PE=1 SV=4
+67,1931,Q9GKE2|CXL16_PIG,83.34,10,10,1.092E3,2,2,4,,27570,C-X-C motif chemokine 16 OS=Sus scrofa OX=9823 GN=CXCL16 PE=2 SV=1
+69,516,P20305|GELS_PIG,82.48,4,4,0,2,2,3,Oxidation (M),84775,Gelsolin (Fragment) OS=Sus scrofa OX=9823 GN=GSN PE=1 SV=1
+134,3016,P29412|EF1B_PIG,81.26,7,7,7.5845E2,1,1,1,Oxidation (M),24960,Elongation factor 1-beta OS=Sus scrofa OX=9823 GN=EEF1B PE=1 SV=1
+65,731,A0PFK5|CAZA1_PIG,79.91,8,8,4.457E3,2,2,4,,33017,F-actin-capping protein subunit alpha-1 OS=Sus scrofa OX=9823 GN=CAPZA1 PE=1 SV=1
+65,90,Q29221|CAZA2_PIG,79.91,8,8,4.457E3,2,2,4,,32981,F-actin-capping protein subunit alpha-2 OS=Sus scrofa OX=9823 GN=CAPZA2 PE=2 SV=3
+59,93,Q5U9S1|MBL1_PIG,76.90,15,15,3.8402E3,2,2,5,Oxidation (M),26489,Mannose-binding protein A OS=Sus scrofa OX=9823 GN=MBL1 PE=1 SV=1
+142,280,P67985|RL22_PIG,75.36,11,11,2.5775E2,1,1,1,,14759,60S ribosomal protein L22 OS=Sus scrofa OX=9823 GN=RPL22 PE=1 SV=2
+70,1107,Q6PQZ1|AQP1_PIG,74.29,6,6,6.2999E3,1,1,3,Oxidation (M),28679,Aquaporin-1 OS=Sus scrofa OX=9823 GN=AQP1 PE=2 SV=3
+89,1448,O79876|COX1_PIG,72.52,2,2,2.005E3,1,1,1,,56958,Cytochrome c oxidase subunit 1 OS=Sus scrofa OX=9823 GN=MT-CO1 PE=3 SV=2
+66,537,Q08094|CNN2_PIG,72.41,6,6,5.0997E2,2,2,4,Oxidation (M),32030,Calponin-2 (Fragment) OS=Sus scrofa OX=9823 GN=CNN2 PE=2 SV=1
+73,699,Q71LE2|H33_PIG,71.64,12,12,1.5187E3,2,2,3,,15328,Histone H3.3 OS=Sus scrofa OX=9823 GN=H3-3A PE=2 SV=3
+80,1403,P80229|ILEU_PIG,66.84,4,4,5.639E2,1,1,2,,42513,Leukocyte elastase inhibitor OS=Sus scrofa OX=9823 GN=SERPINB1 PE=1 SV=1
+133,2902,P80031|GSTP1_PIG,64.01,5,5,2.2026E3,1,1,1,,23497,Glutathione S-transferase P OS=Sus scrofa OX=9823 GN=GSTP1 PE=1 SV=2
+94,992,O11780|BGH3_PIG,63.38,1,1,2.0145E3,1,1,1,,74462,Transforming growth factor-beta-induced protein ig-h3 OS=Sus scrofa OX=9823 GN=TGFBI PE=1 SV=1
+110,25,O02705|HS90A_PIG,63.21,3,3,2.161E2,1,1,1,Oxidation (M),84775,Heat shock protein HSP 90-alpha OS=Sus scrofa OX=9823 GN=HSP90AA1 PE=2 SV=3
+124,2051,P14287|OSTP_PIG,59.88,6,6,0,1,1,1,,33669,Osteopontin OS=Sus scrofa OX=9823 GN=SPP1 PE=1 SV=1
+86,1736,Q2LE37|APOM_PIG,59.76,12,12,4.0815E2,1,1,2,,21241,Apolipoprotein M OS=Sus scrofa OX=9823 GN=APOM PE=2 SV=1
+103,535,Q866Y3|PGRP2_PIG,59.01,3,3,2.9114E2,1,1,1,,64594,N-acetylmuramoyl-L-alanine amidase OS=Sus scrofa OX=9823 GN=PGLYRP2 PE=2 SV=1
+82,48,Q8SPS7|HPT_PIG,58.28,4,4,4.5438E3,1,1,2,,38482,Haptoglobin OS=Sus scrofa OX=9823 GN=HP PE=1 SV=1
+83,1287,Q9GK37|CBG_PIG,57.80,2,2,6.9011E2,1,1,2,,45189,Corticosteroid-binding globulin OS=Sus scrofa OX=9823 GN=Serpina6 PE=2 SV=1
+85,5200,P59083|PHP14_PIG,57.40,11,11,1.2325E3,1,1,2,,13932,14 kDa phosphohistidine phosphatase OS=Sus scrofa OX=9823 GN=PHPT1 PE=1 SV=2
+99,54,Q1KYT0|ENOB_PIG,56.48,3,3,0,1,1,1,,47130,Beta-enolase OS=Sus scrofa OX=9823 GN=ENO3 PE=2 SV=1
+106,978,P79303|UGPA_PIG,50.96,3,3,1.5691E2,1,1,1,Oxidation (M),56961,UTP--glucose-1-phosphate uridylyltransferase OS=Sus scrofa OX=9823 GN=UGP2 PE=2 SV=3
+129,1365,Q4GWZ2|RSSA_PIG,49.99,6,6,1.9403E2,1,1,1,,32928,40S ribosomal protein SA OS=Sus scrofa OX=9823 GN=RPSA PE=1 SV=3
+136,1236,O13009|GUC2B_PIG,48.37,10,10,6.233E2,1,1,1,,12044,Guanylate cyclase activator 2B OS=Sus scrofa OX=9823 GN=GUCA2B PE=3 SV=1
+130,2938,Q29100|UPTI_PIG,48.11,7,7,6.8809E2,1,1,1,,13109,Uterine plasmin/trypsin inhibitor OS=Sus scrofa OX=9823 PE=1 SV=1
+139,5268,A1E952|MSRB1_PIG,47.70,15,15,3.2709E2,1,1,1,,12783,Methionine-R-sulfoxide reductase B1 OS=Sus scrofa OX=9823 GN=MSRB1 PE=3 SV=2
+101,330,O62787|GTR3_PIG,44.84,2,2,1.4349E3,1,1,1,,53963,Solute carrier family 2  facilitated glucose transporter member 3 OS=Sus scrofa OX=9823 GN=SLC2A3 PE=2 SV=2
+117,2687,Q3YLA6|SRSF1_PIG,42.18,5,5,4.482E2,1,1,1,,27745,Serine/arginine-rich splicing factor 1 OS=Sus scrofa OX=9823 GN=SRSF1 PE=2 SV=3
+79,933,Q29593|TALDO_PIG,42.06,4,4,1.9256E4,1,1,2,Oxidation (M),37418,Transaldolase OS=Sus scrofa OX=9823 GN=TALDO1 PE=2 SV=2
+123,1700,P80895|PIMT_PIG,41.89,6,6,4.8405E2,1,1,1,Oxidation (M),24646,Protein-L-isoaspartate(D-aspartate) O-methyltransferase OS=Sus scrofa OX=9823 GN=PCMT1 PE=1 SV=3
+128,1635,Q9TSX9|PRDX6_PIG,41.53,7,7,3.8085E2,1,1,1,,25037,Peroxiredoxin-6 OS=Sus scrofa OX=9823 GN=PRDX6 PE=2 SV=3
+87,42,C0HL13|LRP2_PIG,41.23,1,1,0,1,1,1,,521313,Low-density lipoprotein receptor-related protein 2 OS=Sus scrofa OX=9823 GN=LRP2 PE=1 SV=1
+140,1281,Q06A98|SRSF2_PIG,40.59,7,7,0,1,1,1,Oxidation (M),25448,Serine/arginine-rich splicing factor 2 OS=Sus scrofa OX=9823 GN=SRSF2 PE=2 SV=1
+115,1310,E2IUK4|HORM1_PIG,40.15,4,4,1.2389E4,1,1,1,Oxidation (M),44980,HORMA domain-containing protein 1 OS=Sus scrofa OX=9823 GN=HORMAD1 PE=2 SV=1
+126,436,Q9TTK7|OLR1_PIG,38.96,4,4,8.4815E2,1,1,1,,31143,Oxidized low-density lipoprotein receptor 1 OS=Sus scrofa OX=9823 GN=OLR1 PE=2 SV=1
+108,69,Q2XQV4|ALDH2_PIG,38.65,4,4,1.8892E2,1,1,1,,56921,Aldehyde dehydrogenase  mitochondrial OS=Sus scrofa OX=9823 GN=ALDH2 PE=2 SV=1
+95,640,Q29052|ITIH1_PIG,38.63,3,3,5.5141E3,1,1,1,,100395,Inter-alpha-trypsin inhibitor heavy chain H1 OS=Sus scrofa OX=9823 GN=ITIH1 PE=2 SV=1
+141,3121,P49666|RL21_PIG,38.06,9,9,8.806E2,1,1,1,,18565,60S ribosomal protein L21 OS=Sus scrofa OX=9823 GN=RPL21 PE=1 SV=3
+120,1095,Q8WNE9|BAALC_PIG,37.83,5,5,0,1,1,1,,15401,Brain and acute leukemia cytoplasmic protein OS=Sus scrofa OX=9823 GN=BAALC PE=2 SV=3
+105,433,A4Z6H1|PURA2_PIG,37.81,2,2,0,1,1,1,,50140,Adenylosuccinate synthetase isozyme 2 OS=Sus scrofa OX=9823 GN=ADSS2 PE=2 SV=1
+105,2638,A4Z6H0|PURA1_PIG,37.81,2,2,0,1,1,1,,50098,Adenylosuccinate synthetase isozyme 1 OS=Sus scrofa OX=9823 GN=ADSS1 PE=2 SV=1
+90,168,Q27HV0|OGT1_PIG,36.93,1,1,2.8893E3,1,1,2,,116923,UDP-N-acetylglucosamine--peptide N-acetylglucosaminyltransferase 110 kDa subunit OS=Sus scrofa OX=9823 GN=OGT PE=2 SV=1
+116,35,O62839|CATA_PIG,36.43,3,3,7.6261E2,1,1,1,,59891,Catalase OS=Sus scrofa OX=9823 GN=CAT PE=1 SV=4
+118,1621,P49927|PRIO_PIG,36.20,3,3,0,1,1,1,,27727,Major prion protein OS=Sus scrofa OX=9823 GN=PRNP PE=1 SV=1
+93,79,P29804|ODPA_PIG,36.01,3,3,0,1,1,1,,43121,Pyruvate dehydrogenase E1 component subunit alpha  somatic form  mitochondrial (Fragment) OS=Sus scrofa OX=9823 GN=PDHA1 PE=1 SV=1
+113,2888,Q2QDF0|DNSL1_PIG,35.44,3,3,3.4271E2,1,1,1,,34986,Deoxyribonuclease-1-like 1 OS=Sus scrofa OX=9823 GN=DNASE1L1 PE=2 SV=1
+109,1571,P52649|CY24B_PIG,34.74,4,4,2.3563E2,1,1,1,Oxidation (M),55830,Cytochrome b-245 heavy chain (Fragment) OS=Sus scrofa OX=9823 GN=CYBB PE=2 SV=2
+104,196,Q29024|DX39B_PIG,34.56,4,4,1.3226E4,1,1,1,Oxidation (M),48991,Spliceosome RNA helicase DDX39B OS=Sus scrofa OX=9823 GN=DDX39B PE=3 SV=2
+97,927,Q9TSV5|PO5F1_PIG,34.20,7,7,1.9436E2,1,1,1,,38342,POU domain  class 5  transcription factor 1 OS=Sus scrofa OX=9823 GN=POU5F1 PE=1 SV=1
+88,121,Q867B5|RAG1_PIG,34.06,1,1,1.3803E3,1,1,1,,119068,V(D)J recombination-activating protein 1 OS=Sus scrofa OX=9823 GN=RAG1 PE=3 SV=1
+98,693,F1SAM7|AMNLS_PIG,33.98,2,2,5.354E3,1,1,1,,55186,Protein amnionless OS=Sus scrofa OX=9823 GN=AMN PE=1 SV=2
+122,349,P0C5I2|GMPPB_PIG,33.75,2,2,0,1,1,1,,39828,Mannose-1-phosphate guanyltransferase beta OS=Sus scrofa OX=9823 GN=GMPPB PE=1 SV=1
+119,1116,A4GVD1|CXG1_PIG,33.33,4,4,0,1,1,1,,45598,Gap junction gamma-1 protein OS=Sus scrofa OX=9823 GN=GJC1 PE=2 SV=1
+121,833,P16164|URIC_PIG,33.32,3,3,6.5884E2,1,1,1,,35008,Uricase OS=Sus scrofa OX=9823 GN=UOX PE=2 SV=3
+137,1347,Q9XSZ6|FCERG_PIG,33.28,24,24,2.5032E3,1,1,1,,9681,High affinity immunoglobulin epsilon receptor subunit gamma OS=Sus scrofa OX=9823 GN=FCER1G PE=3 SV=1
+131,998,Q95ND5|CASP3_PIG,33.24,5,5,6.5346E2,1,1,1,Oxidation (M),31379,Caspase-3 OS=Sus scrofa OX=9823 GN=CASP3 PE=1 SV=1

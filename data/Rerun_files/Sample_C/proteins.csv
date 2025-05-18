@@ -1,0 +1,29 @@
+Protein Group,Protein ID,Accession,-10lgP,Coverage (%),Coverage (%) Sample 3,Area Sample 3,#Peptides,#Unique,#Spec Sample 3,PTM,Avg. Mass,Description
+2,30,tr|F1RX37|F1RX37_PIG,262.34,9,9,5.3404E5,44,44,210,,60843,Fibrinogen beta chain OS=Sus scrofa OX=9823 GN=FGB PE=1 SV=4
+1,1,tr|F1RX36|F1RX36_PIG,255.42,22,22,1.0033E6,44,44,479,Oxidation (M),101096,Fibrinogen alpha chain OS=Sus scrofa OX=9823 GN=FGA PE=1 SV=4
+3,9,P27917|APOC3_PIG,236.98,57,57,5.9402E4,34,34,74,Oxidation (M),10704,Apolipoprotein C-III OS=Sus scrofa OX=9823 GN=APOC3 PE=1 SV=2
+4,2,P01965|HBA_PIG,190.79,65,65,2.2474E4,24,24,55,Oxidation (M),15039,Hemoglobin subunit alpha OS=Sus scrofa OX=9823 GN=HBA PE=1 SV=1
+6,6,P02067|HBB_PIG,160.47,31,31,9.8394E3,13,13,19,Oxidation (M),16166,Hemoglobin subunit beta OS=Sus scrofa OX=9823 GN=HBB PE=1 SV=3
+5,4,P51524|PF11_PIG,129.11,15,15,8.3182E4,10,10,32,,23956,Prophenin and tritrpticin precursor (Fragment) OS=Sus scrofa OX=9823 PE=1 SV=1
+8,91,O19084|CDSN_PIG,119.68,25,25,3.0119E3,6,6,10,Oxidation (M),21644,Corneodesmosin (Fragment) OS=Sus scrofa OX=9823 GN=CDSN PE=3 SV=1
+7,50,Q95JC9|PRP_PIG,112.28,5,5,1.6627E4,6,6,19,,62283,Basic proline-rich protein OS=Sus scrofa OX=9823 PE=1 SV=2
+9,128,Q3BDI7|DSG1_PIG,106.86,4,4,7.2586E2,5,5,7,,113318,Desmoglein-1 OS=Sus scrofa OX=9823 GN=DSG1 PE=2 SV=1
+13,26,P19619|ANXA1_PIG,104.10,3,3,1.3016E3,3,3,3,,38759,Annexin A1 OS=Sus scrofa OX=9823 GN=ANXA1 PE=1 SV=3
+11,29,P01025|CO3_PIG,99.35,2,2,8.3658E2,5,5,5,Oxidation (M),186806,Complement C3 OS=Sus scrofa OX=9823 GN=C3 PE=1 SV=2
+12,8,Q6QAQ1|ACTB_PIG,95.61,10,10,1.9992E2,4,4,5,Oxidation (M),41737,Actin  cytoplasmic 1 OS=Sus scrofa OX=9823 GN=ACTB PE=1 SV=2
+14,22,P18650|APOE_PIG,92.93,6,6,1.0094E3,3,3,3,Oxidation (M),36599,Apolipoprotein E OS=Sus scrofa OX=9823 GN=APOE PE=1 SV=2
+17,313,O02773|MA1A1_PIG,73.49,2,2,0,2,2,2,,73197,Mannosyl-oligosaccharide 1 2-alpha-mannosidase IA OS=Sus scrofa OX=9823 GN=MAN1A1 PE=1 SV=1
+15,45,Q95274|TYB4_PIG,69.30,55,55,0,3,3,3,,5053,Thymosin beta-4 OS=Sus scrofa OX=9823 GN=TMSB4 PE=3 SV=3
+20,653,P50447|A1AT_PIG,54.44,4,4,0,1,1,1,,47194,Alpha-1-antitrypsin OS=Sus scrofa OX=9823 GN=SERPINA1 PE=2 SV=1
+18,3,P18648|APOA1_PIG,53.35,5,5,3.1969E2,1,1,2,Oxidation (M),30325,Apolipoprotein A-I OS=Sus scrofa OX=9823 GN=APOA1 PE=1 SV=4
+10,321,O97507|FA12_PIG,52.56,2,2,9.2298E3,1,1,6,,68012,Coagulation factor XII OS=Sus scrofa OX=9823 GN=F12 PE=2 SV=1
+19,620,Q9TV63|MYH2_PIG,47.95,1,1,0,1,1,1,,223148,Myosin-2 OS=Sus scrofa OX=9823 GN=MYH2 PE=2 SV=1
+19,408,Q9TV62|MYH4_PIG,47.95,1,1,0,1,1,1,,223234,Myosin-4 OS=Sus scrofa OX=9823 GN=MYH4 PE=2 SV=1
+19,535,Q9TV61|MYH1_PIG,47.95,1,1,0,1,1,1,,223171,Myosin-1 OS=Sus scrofa OX=9823 GN=MYH1 PE=2 SV=1
+23,88,P06867|PLMN_PIG,42.99,1,1,0,1,1,1,,90615,Plasminogen OS=Sus scrofa OX=9823 GN=PLG PE=1 SV=3
+26,18,P00355|G3P_PIG,36.68,5,5,9.1631E1,1,1,1,,35836,Glyceraldehyde-3-phosphate dehydrogenase OS=Sus scrofa OX=9823 GN=GAPDH PE=1 SV=4
+22,1843,Q29073|PTGR1_PIG,36.13,3,3,0,1,1,1,,35762,Prostaglandin reductase 1 OS=Sus scrofa OX=9823 GN=PTGR1 PE=1 SV=1
+24,11,P02543|VIME_PIG,36.05,4,4,0,1,1,1,,53668,Vimentin OS=Sus scrofa OX=9823 GN=VIM PE=1 SV=2
+25,177,Q9GLP2|PROC_PIG,35.73,3,3,2.3921E2,1,1,1,,51867,Vitamin K-dependent protein C OS=Sus scrofa OX=9823 GN=PROC PE=2 SV=1
+21,292,Q33BP8|FOXN3_PIG,35.49,1,1,1.6525E3,1,1,1,,53308,Forkhead box protein N3 OS=Sus scrofa OX=9823 GN=FOXN3 PE=2 SV=1
+27,36,P0DSO0|SAA2_PIG,35.21,9,9,0,1,1,1,Oxidation (M),14418,Serum amyloid A-2 protein OS=Sus scrofa OX=9823 GN=SAA2 PE=3 SV=1
