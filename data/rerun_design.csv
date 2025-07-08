@@ -1,13 +1,13 @@
-blinded_label,sample_name
-Sample A,Sample 17 Day 1
-Sample B,Sample 24 Day 1
-Sample C,Sample 39 Day 1
-Sample D,Sample 30 Day 1
-Sample E,Sample 46 Day 1
-Sample F,Sample 44 Day 1
-Sample G,Sample 35 Day 1
-Sample H,Sample 22 Day 1
-Sample I,Sample 70 Day 1
-Sample J,Sample 2 Day 1
-Sample K,Sample 14 Day 1
-Sample L,Sample 11 Day 1
+blinded_label,sample_name,filename_pride
+Sample A,Sample 17 Day 1,Sample_A
+Sample B,Sample 24 Day 1,Sample_B
+Sample C,Sample 39 Day 1,Sample_C
+Sample D,Sample 30 Day 1,Sample_D
+Sample E,Sample 46 Day 1,Sample_E
+Sample F,Sample 44 Day 1,Sample_F
+Sample G,Sample 35 Day 1,Sample_G
+Sample H,Sample 22 Day 1,Sample_H
+Sample I,Sample 70 Day 1,Sample_I
+Sample J,Sample 2 Day 1,Sample_J
+Sample K,Sample 14 Day 1,Sample_K
+Sample L,Sample 11 Day 1,Sample_L

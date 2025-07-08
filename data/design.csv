@@ -1,114 +1,114 @@
-id,group,day,pig,wound
-Sample 1 Day 1,S. aureus,Day 1,2,1
-Sample 1 Day 2,S. aureus,Day 2,2,1
-Sample 2 Day 1,S. aureus,Day 1,2,2
-Sample 2 Day 2,S. aureus,Day 2,2,2
-Sample 3 Day 1,S. aureus,Day 1,2,3
-Sample 3 Day 2,S. aureus,Day 2,2,3
-Sample 4 Day 1,S. aureus,Day 1,2,9
-Sample 4 Day 2,S. aureus,Day 2,2,9
-Sample 5 Day 1,S. aureus,Day 1,2,10
-Sample 5 Day 2,S. aureus,Day 2,2,10
-Sample 6 Day 1,Accidental double infection,Day 1,5,3
-Sample 6 Day 2,Accidental double infection,Day 2,5,3
-Sample 7 Day 1,Accidental double infection,Day 1,5,4
-Sample 7 Day 2,Accidental double infection,Day 2,5,4
-Sample 8 Day 1,Accidental double infection,Day 1,5,6
-Sample 8 Day 2,Accidental double infection,Day 2,5,6
-Sample 9 Day 1,Accidental double infection,Day 1,5,10
-Sample 9 Day 2,Accidental double infection,Day 2,5,10
-Sample 10 Day 1,S. aureus,Day 1,6,3
-Sample 10 Day 2,S. aureus,Day 2,6,3
-Sample 11 Day 1,S. aureus,Day 1,6,4
-Sample 11 Day 2,S. aureus,Day 2,6,4
-Sample 12 Day 1,S. aureus,Day 1,6,6
-Sample 12 Day 2,S. aureus,Day 2,6,6
-Sample 13 Day 1,S. aureus,Day 1,6,11
-Sample 13 Day 2,S. aureus,Day 2,6,11
-Sample 14 Day 1,S. aureus,Day 1,17,1
-Sample 14 Day 2,S. aureus,Day 2,17,1
-Sample 15 Day 1,S. aureus,Day 1,17,2
-Sample 15 Day 2,S. aureus,Day 2,17,2
-Sample 16 Day 1,S. aureus,Day 1,17,5
-Sample 16 Day 2,S. aureus,Day 2,17,5
-Sample 17 Day 1,P. aeruginosa,Day 1,3,1
-Sample 17 Day 2,P. aeruginosa,Day 2,3,1
-Sample 18 Day 1,P. aeruginosa,Day 1,3,2
-Sample 18 Day 2,P. aeruginosa,Day 2,3,2
-Sample 19 Day 1,P. aeruginosa,Day 1,3,3
-Sample 19 Day 2,P. aeruginosa,Day 2,3,3
-Sample 20 Day 1,P. aeruginosa,Day 1,4,3
-Sample 20 Day 2,P. aeruginosa,Day 2,4,3
-Sample 21 Day 1,P. aeruginosa,Day 1,4,4
-Sample 21 Day 2,P. aeruginosa,Day 2,4,4
-Sample 22 Day 1,P. aeruginosa,Day 1,4,6
-Sample 22 Day 2,P. aeruginosa,Day 2,4,6
-Sample 23 Day 1,P. aeruginosa,Day 1,4,10
-Sample 23 Day 2,P. aeruginosa,Day 2,4,10
-Sample 24 Day 1,P. aeruginosa,Day 1,8,3
-Sample 24 Day 2,P. aeruginosa,Day 2,8,3
-Sample 25 Day 1,P. aeruginosa,Day 1,8,4
-Sample 25 Day 2,P. aeruginosa,Day 2,8,4
-Sample 26 Day 1,P. aeruginosa,Day 1,8,6
-Sample 26 Day 2,P. aeruginosa,Day 2,8,6
-Sample 27 Day 1,P. aeruginosa,Day 1,8,10
-Sample 27 Day 2,P. aeruginosa,Day 2,8,10
-Sample 28 Day 1,P. aeruginosa,Day 1,8,11
-Sample 28 Day 2,P. aeruginosa,Day 2,8,11
-Sample 29 Day 1,P. aeruginosa,Day 1,11,3
-Sample 30 Day 1,P. aeruginosa,Day 1,11,4
-Sample 30 Day 2,P. aeruginosa,Day 2,11,4
-Sample 31 Day 1,P. aeruginosa,Day 1,11,6
-Sample 31 Day 2,P. aeruginosa,Day 2,11,6
-Sample 32 Day 1,P. aeruginosa,Day 1,11,7
-Sample 32 Day 2,P. aeruginosa,Day 2,11,7
-Sample 33 Day 1,P. aeruginosa,Day 1,11,8
-Sample 33 Day 2,P. aeruginosa,Day 2,11,8
-Sample 34 Day 1,Ctrl,Day 1,10,6
-Sample 34 Day 2,Ctrl,Day 2,10,6
-Sample 35 Day 1,Ctrl,Day 1,10,11
-Sample 35 Day 2,Ctrl,Day 2,10,11
-Sample 36 Day 1,Ctrl,Day 1,14,3
-Sample 36 Day 2,Ctrl,Day 2,14,3
-Sample 37 Day 1,Ctrl,Day 1,14,6
-Sample 37 Day 2,Ctrl,Day 2,14,6
-Sample 38 Day 1,Ctrl,Day 1,14,7
-Sample 38 Day 2,Ctrl,Day 2,14,7
-Sample 39 Day 1,Ctrl,Day 1,14,11
-Sample 39 Day 2,Ctrl,Day 2,14,11
-Sample 40 Day 1,Ctrl,Day 1,16,3
-Sample 40 Day 2,Ctrl,Day 2,16,3
-Sample 41 Day 1,Ctrl,Day 1,16,4
-Sample 41 Day 2,Ctrl,Day 2,16,4
-Sample 42 Day 1,Ctrl,Day 1,16,6
-Sample 42 Day 2,Ctrl,Day 2,16,6
-Sample 43 Day 1,Ctrl,Day 1,16,7
-Sample 43 Day 2,Ctrl,Day 2,16,7
-Sample 44 Day 1,Ctrl,Day 1,16,8
-Sample 44 Day 2,Ctrl,Day 2,16,8
-Sample 45 Day 1,Ctrl,Day 1,16,11
-Sample 45 Day 2,Ctrl,Day 2,16,11
-Sample 46 Day 1,Ctrl,Day 1,24,1
-Sample 46 Day 2,Ctrl,Day 2,24,1
-Sample 54 Day 1,S. aureus,Day 1,21,1
-Sample 54 Day 2,Double infection,Day 2,21,1
-Sample 54 Day 3,Double infection,Day 3,21,1
-Sample 55 Day 1,S. aureus,Day 1,21,2
-Sample 55 Day 2,Double infection,Day 2,21,2
-Sample 55 Day 3,Double infection,Day 3,21,2
-Sample 56 Day 1,S. aureus,Day 1,21,5
-Sample 56 Day 2,Double infection,Day 2,21,5
-Sample 56 Day 3,Double infection,Day 3,21,5
-Sample 57 Day 1,S. aureus,Day 1,21,9
-Sample 57 Day 2,Double infection,Day 2,21,9
-Sample 57 Day 3,Double infection,Day 3,21,9
-Sample 66 Day 1,S. aureus,Day 1,12,1
-Sample 66 Day 2,S. aureus,Day 2,12,1
-Sample 67 Day 1,S. aureus,Day 1,12,2
-Sample 67 Day 2,S. aureus,Day 2,12,2
-Sample 68 Day 1,S. aureus,Day 1,12,5
-Sample 68 Day 2,S. aureus,Day 2,12,5
-Sample 69 Day 1,S. aureus,Day 1,12,7
-Sample 69 Day 2,S. aureus,Day 2,12,7
-Sample 70 Day 1,S. aureus,Day 1,12,8
-Sample 70 Day 2,S. aureus,Day 2,12,8
+id,group,day,pig,wound,filename_pride
+Sample 1 Day 1,S. aureus,Day 1,2,1,pig_sample_1_day_1
+Sample 1 Day 2,S. aureus,Day 2,2,1,pig_sample_1_day_2
+Sample 2 Day 1,S. aureus,Day 1,2,2,pig_sample_2_day_1
+Sample 2 Day 2,S. aureus,Day 2,2,2,pig_sample_2_day_2
+Sample 3 Day 1,S. aureus,Day 1,2,3,pig_sample_3_day_1
+Sample 3 Day 2,S. aureus,Day 2,2,3,pig_sample_3_day_2
+Sample 4 Day 1,S. aureus,Day 1,2,9,pig_sample_4_day_1
+Sample 4 Day 2,S. aureus,Day 2,2,9,pig_sample_4_day_2
+Sample 5 Day 1,S. aureus,Day 1,2,10,pig_sample_5_day_1
+Sample 5 Day 2,S. aureus,Day 2,2,10,pig_sample_5_day_2
+Sample 6 Day 1,Accidental double infection,Day 1,5,3,pig_sample_6_day_1
+Sample 6 Day 2,Accidental double infection,Day 2,5,3,pig_sample_6_day_2
+Sample 7 Day 1,Accidental double infection,Day 1,5,4,pig_sample_7_day_1
+Sample 7 Day 2,Accidental double infection,Day 2,5,4,pig_sample_7_day_2
+Sample 8 Day 1,Accidental double infection,Day 1,5,6,pig_sample_8_day_1
+Sample 8 Day 2,Accidental double infection,Day 2,5,6,pig_sample_8_day_2
+Sample 9 Day 1,Accidental double infection,Day 1,5,10,pig_sample_9_day_1
+Sample 9 Day 2,Accidental double infection,Day 2,5,10,pig_sample_9_day_2
+Sample 10 Day 1,S. aureus,Day 1,6,3,pig_sample_10_day_1
+Sample 10 Day 2,S. aureus,Day 2,6,3,pig_sample_10_day_2
+Sample 11 Day 1,S. aureus,Day 1,6,4,pig_sample_11_day_1
+Sample 11 Day 2,S. aureus,Day 2,6,4,pig_sample_11_day_2
+Sample 12 Day 1,S. aureus,Day 1,6,6,pig_sample_12_day_1
+Sample 12 Day 2,S. aureus,Day 2,6,6,pig_sample_12_day_2
+Sample 13 Day 1,S. aureus,Day 1,6,11,pig_sample_13_day_1
+Sample 13 Day 2,S. aureus,Day 2,6,11,pig_sample_13_day_2
+Sample 14 Day 1,S. aureus,Day 1,17,1,pig_sample_14_day_1
+Sample 14 Day 2,S. aureus,Day 2,17,1,pig_sample_14_day_2
+Sample 15 Day 1,S. aureus,Day 1,17,2,pig_sample_15_day_1
+Sample 15 Day 2,S. aureus,Day 2,17,2,pig_sample_15_day_2
+Sample 16 Day 1,S. aureus,Day 1,17,5,pig_sample_16_day_1
+Sample 16 Day 2,S. aureus,Day 2,17,5,pig_sample_16_day_2
+Sample 17 Day 1,P. aeruginosa,Day 1,3,1,pig_sample_17_day_1
+Sample 17 Day 2,P. aeruginosa,Day 2,3,1,pig_sample_17_day_2
+Sample 18 Day 1,P. aeruginosa,Day 1,3,2,pig_sample_18_day_1
+Sample 18 Day 2,P. aeruginosa,Day 2,3,2,pig_sample_18_day_2
+Sample 19 Day 1,P. aeruginosa,Day 1,3,3,pig_sample_19_day_1
+Sample 19 Day 2,P. aeruginosa,Day 2,3,3,pig_sample_19_day_2
+Sample 20 Day 1,P. aeruginosa,Day 1,4,3,pig_sample_20_day_1
+Sample 20 Day 2,P. aeruginosa,Day 2,4,3,pig_sample_20_day_2
+Sample 21 Day 1,P. aeruginosa,Day 1,4,4,pig_sample_21_day_1
+Sample 21 Day 2,P. aeruginosa,Day 2,4,4,pig_sample_21_day_2
+Sample 22 Day 1,P. aeruginosa,Day 1,4,6,pig_sample_22_day_1
+Sample 22 Day 2,P. aeruginosa,Day 2,4,6,pig_sample_22_day_2
+Sample 23 Day 1,P. aeruginosa,Day 1,4,10,pig_sample_23_day_1
+Sample 23 Day 2,P. aeruginosa,Day 2,4,10,pig_sample_23_day_2
+Sample 24 Day 1,P. aeruginosa,Day 1,8,3,pig_sample_24_day_1
+Sample 24 Day 2,P. aeruginosa,Day 2,8,3,pig_sample_24_day_2
+Sample 25 Day 1,P. aeruginosa,Day 1,8,4,pig_sample_25_day_1
+Sample 25 Day 2,P. aeruginosa,Day 2,8,4,pig_sample_25_day_2
+Sample 26 Day 1,P. aeruginosa,Day 1,8,6,pig_sample_26_day_1
+Sample 26 Day 2,P. aeruginosa,Day 2,8,6,pig_sample_26_day_2
+Sample 27 Day 1,P. aeruginosa,Day 1,8,10,pig_sample_27_day_1
+Sample 27 Day 2,P. aeruginosa,Day 2,8,10,pig_sample_27_day_2
+Sample 28 Day 1,P. aeruginosa,Day 1,8,11,pig_sample_28_day_1
+Sample 28 Day 2,P. aeruginosa,Day 2,8,11,pig_sample_28_day_2
+Sample 29 Day 1,P. aeruginosa,Day 1,11,3,pig_sample_29_day_1
+Sample 30 Day 1,P. aeruginosa,Day 1,11,4,pig_sample_30_day_1
+Sample 30 Day 2,P. aeruginosa,Day 2,11,4,pig_sample_30_day_2
+Sample 31 Day 1,P. aeruginosa,Day 1,11,6,pig_sample_31_day_1
+Sample 31 Day 2,P. aeruginosa,Day 2,11,6,pig_sample_31_day_2
+Sample 32 Day 1,P. aeruginosa,Day 1,11,7,pig_sample_32_day_1
+Sample 32 Day 2,P. aeruginosa,Day 2,11,7,pig_sample_32_day_2
+Sample 33 Day 1,P. aeruginosa,Day 1,11,8,pig_sample_33_day_1
+Sample 33 Day 2,P. aeruginosa,Day 2,11,8,pig_sample_33_day_2
+Sample 34 Day 1,Ctrl,Day 1,10,6,pig_sample_34_day_1
+Sample 34 Day 2,Ctrl,Day 2,10,6,pig_sample_34_day_2
+Sample 35 Day 1,Ctrl,Day 1,10,11,pig_sample_35_day_1
+Sample 35 Day 2,Ctrl,Day 2,10,11,pig_sample_35_day_2
+Sample 36 Day 1,Ctrl,Day 1,14,3,pig_sample_36_day_1
+Sample 36 Day 2,Ctrl,Day 2,14,3,pig_sample_36_day_2
+Sample 37 Day 1,Ctrl,Day 1,14,6,pig_sample_37_day_1
+Sample 37 Day 2,Ctrl,Day 2,14,6,pig_sample_37_day_2
+Sample 38 Day 1,Ctrl,Day 1,14,7,pig_sample_38_day_1
+Sample 38 Day 2,Ctrl,Day 2,14,7,pig_sample_38_day_2
+Sample 39 Day 1,Ctrl,Day 1,14,11,pig_sample_39_day_1
+Sample 39 Day 2,Ctrl,Day 2,14,11,pig_sample_39_day_2
+Sample 40 Day 1,Ctrl,Day 1,16,3,pig_sample_40_day_1
+Sample 40 Day 2,Ctrl,Day 2,16,3,pig_sample_40_day_2
+Sample 41 Day 1,Ctrl,Day 1,16,4,pig_sample_41_day_1
+Sample 41 Day 2,Ctrl,Day 2,16,4,pig_sample_41_day_2
+Sample 42 Day 1,Ctrl,Day 1,16,6,pig_sample_42_day_1
+Sample 42 Day 2,Ctrl,Day 2,16,6,pig_sample_42_day_2
+Sample 43 Day 1,Ctrl,Day 1,16,7,pig_sample_43_day_1
+Sample 43 Day 2,Ctrl,Day 2,16,7,pig_sample_43_day_2
+Sample 44 Day 1,Ctrl,Day 1,16,8,pig_sample_44_day_1
+Sample 44 Day 2,Ctrl,Day 2,16,8,pig_sample_44_day_2
+Sample 45 Day 1,Ctrl,Day 1,16,11,pig_sample_45_day_1
+Sample 45 Day 2,Ctrl,Day 2,16,11,pig_sample_45_day_2
+Sample 46 Day 1,Ctrl,Day 1,24,1,pig_sample_46_day_1
+Sample 46 Day 2,Ctrl,Day 2,24,1,pig_sample_46_day_2
+Sample 54 Day 1,S. aureus,Day 1,21,1,pig_sample_54_day_1
+Sample 54 Day 2,Double infection,Day 2,21,1,pig_sample_54_day_2
+Sample 54 Day 3,Double infection,Day 3,21,1,pig_sample_54_day_3
+Sample 55 Day 1,S. aureus,Day 1,21,2,pig_sample_55_day_1
+Sample 55 Day 2,Double infection,Day 2,21,2,pig_sample_55_day_2
+Sample 55 Day 3,Double infection,Day 3,21,2,pig_sample_55_day_3
+Sample 56 Day 1,S. aureus,Day 1,21,5,pig_sample_56_day_1
+Sample 56 Day 2,Double infection,Day 2,21,5,pig_sample_56_day_2
+Sample 56 Day 3,Double infection,Day 3,21,5,pig_sample_56_day_3
+Sample 57 Day 1,S. aureus,Day 1,21,9,pig_sample_57_day_1
+Sample 57 Day 2,Double infection,Day 2,21,9,pig_sample_57_day_2
+Sample 57 Day 3,Double infection,Day 3,21,9,pig_sample_57_day_3
+Sample 66 Day 1,S. aureus,Day 1,12,1,pig_sample_66_day_1
+Sample 66 Day 2,S. aureus,Day 2,12,1,pig_sample_66_day_2
+Sample 67 Day 1,S. aureus,Day 1,12,2,pig_sample_67_day_1
+Sample 67 Day 2,S. aureus,Day 2,12,2,pig_sample_67_day_2
+Sample 68 Day 1,S. aureus,Day 1,12,5,pig_sample_68_day_1
+Sample 68 Day 2,S. aureus,Day 2,12,5,pig_sample_68_day_2
+Sample 69 Day 1,S. aureus,Day 1,12,7,pig_sample_69_day_1
+Sample 69 Day 2,S. aureus,Day 2,12,7,pig_sample_69_day_2
+Sample 70 Day 1,S. aureus,Day 1,12,8,pig_sample_70_day_1
+Sample 70 Day 2,S. aureus,Day 2,12,8,pig_sample_70_day_2
