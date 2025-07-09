@@ -14,6 +14,8 @@ This repository contains data and analysis code for mass spectrometry-based pept
   - `data/design.csv`: Contains metadata about main experiment samples
   - `data/rerun_design.csv`: Contains metadata about rerun experiment samples
 
+More information can be found in [/data](/data/README.md)
+
 ### Processed Data
 
 All processed data files are stored in the `outputs/` directory:
@@ -32,7 +34,7 @@ The mass spectrometry data files were searched using PEAKS software with the fol
 - Fragment mass tolerance: 0.02 Da
 - Variable modifications: Oxidation (M), Acetylation (N-term)
 
-The complete dataset has been deposited to ProteomeXchange with the identifier PXD000000 (placeholder - update with actual identifier).
+The complete dataset has been deposited to ProteomeXchange with the identifier PXD048892. The blinded re-run dataset is deposited with the identifier PXD055074. 
 
 ## Repository Structure
 

@@ -60,8 +60,11 @@ Contains metadata for the rerun experiment samples (12 samples total).
 #### `Pig_day_1/`, `Pig_day_2/`, `Pig_day_3/`
 Each contains individual sample directories for the different days with PEAKS software output files. 
 
+**Directory Naming Convention:**
+All sample directories follow the consistent pattern: `Sample_X/` where X is the sample number.
+
 **Sample Directory Structure:**
-Each sample directory (e.g., `230524_Fredrik_Forsberg_DB_Search_Sample_1_3/`) contains:
+Each sample directory (regardless of naming convention) contains:
 - `DB search psm.csv`: Database search peptide-spectrum matches
 - `de novo only peptides.csv`: De novo sequenced peptides
 - `peptide.csv`: Identified peptides with quantification
